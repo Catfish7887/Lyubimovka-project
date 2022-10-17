@@ -1,7 +1,7 @@
 {
   "name": "lyubimovka-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lets start:)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/Catfish7887/Lyubimovka-project/issues"
   },
-  "homepage": "https://github.com/Catfish7887/Lyubimovka-project#readme"
+  "homepage": "https://github.com/Catfish7887/Lyubimovka-project#readme",
+  "keywords": []
 }
