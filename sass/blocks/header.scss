@@ -77,7 +77,7 @@
 }
 
 // Cтили для адаптива.
-@media screen and (max-width: 1190px) {
+@media screen and (max-width: 1280px) {
   .header__nav {
     padding: 0px 15px 0 16px;
   }
@@ -111,7 +111,7 @@
   }
 }
 
-@media screen and (max-width: 985px) {
+@media screen and (max-width: 1065px) {
   .header {
     padding: 6px 0 0 24px;
   }
@@ -149,20 +149,20 @@
   }
 }
 
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 890px) {
   .header__link_nav {
-    font-size: 11px;
-    line-height: 17px;
+    font-size: 10px;
+    line-height: 16px;
   }
 
   .header__link_social {
-    font-size: 11px;
-    line-height: 13px;
+    font-size: 10px;
+    line-height: 11px;
   }
 
   .header__link_support {
-    font-size: 9px;
-    line-height: 12px;
+    font-size: 8px;
+    line-height: 11px;
   }
 
   .header__link_img {
@@ -171,7 +171,7 @@
   }
 }
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 768px) {
   .header__nav,
   .header__social,
   .header__support {
