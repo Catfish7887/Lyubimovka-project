@@ -1,9 +1,25 @@
+@font-face {
+  font-display: swap;
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../vendor/Fonts/formular-light.eot");
+  src: url("../vendor/Fonts/formular-light.eot?#iefix") format("embedded-opentype"), url("../vendor/Fonts/formular-light.woff2") format("woff2"), url("../vendor/Fonts/formular-light.woff") format("woff");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../vendor/Fonts/PPNeueMachina-Regular.eot");
+  src: url("../vendor/Fonts/PPNeueMachina-Regular.eot?#iefix") format("embedded-opentype"), url("../vendor/Fonts/PPNeueMachina-Regular.woff2") format("woff2"), url("../vendor/Fonts/PPNeueMachina-Regular.woff") format("woff");
+}
 .page {
   min-width: 414px;
   max-width: 1440px;
   margin: auto;
   background-color: #ecebe8;
-  font-family: FormularLight, Arial, sans-serif;
+  font-family: Formular, "Neue Machina", Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
