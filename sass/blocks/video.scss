@@ -1,4 +1,5 @@
 $margLeft: 25%;
+$margLeft1280: auto;
 
 //Стили для родительских элементов секции
 
@@ -8,28 +9,36 @@ $margLeft: 25%;
   margin-left: $margLeft;
   font-size: 40px;
   line-height: 40px;
+  max-width: 716px;
 }
 
 .videos__container {
   display: flex;
   flex-direction: row;
-  margin: 45px auto 0;
+  gap: 60px;
 }
 
-.videos__container:nth-of-type(2) {
+.videos__scroll-container:nth-of-type(2) {
   max-width: 900px;
 }
 
-.videos__container:nth-of-type(3) {
+.videos__scroll-container:nth-of-type(3) {
   max-width: 1380px;
 }
 
-.videos__container:first-of-type {
+.videos__container_single {
+  margin-left: $margLeft;
+  display: block;
+  max-width: 716px;
   margin-top: 37px;
 }
 
+.videos__scroll-container {
+ margin: 37px auto 0;
+}
+
 .videos__text {
-  max-width: 700px;
+  max-width: 716px;
   margin-top: 55px;
   margin-left: $margLeft;
 }
@@ -40,7 +49,6 @@ $margLeft: 25%;
   width: 420px;
   height: 236px;
   position: relative;
-  margin-right: 60px;
 }
 
 .video__element:last-of-type {
@@ -48,7 +56,6 @@ $margLeft: 25%;
 }
 
 .video__element_single {
-  margin-left: $margLeft;
   width: 716px;
   height: 403px;
   margin-right: 0;
@@ -80,4 +87,80 @@ $margLeft: 25%;
 
 .video__play-btn:hover {
   opacity: 0.5;
+}
+
+//Адаптив
+
+@media screen {
+  @media (max-width: 1380px) {
+    .videos__container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .videos__heading {
+      margin: 98px auto 0;
+    }
+
+    .videos__container_single {
+      margin: 37px auto 0;
+      display: block;
+    }
+
+    .videos__text {
+      margin: 55px auto 0;
+    }
+  }
+
+  @media (max-width: 920px) {
+    .videos__container {
+      position: static;
+    }
+
+    .videos__scroll-container {
+      display: flex;
+      width: 300px;
+      height: 170px;
+      overflow-x: scroll;
+      margin: 45px auto 0;
+      position: relative;
+    }
+
+    .videos__container {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 30px;
+      margin: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .videos__container_single {
+      width: 366px;
+      margin: 37px auto 0;
+      position: static;
+      display: block;
+    }
+
+    .videos__text {
+      width: 366px;
+    }
+
+    .video__element {
+      width: 300px;
+      height: 170px;
+    }
+
+    .video__element_single {
+      width: 366px;
+      height: 210px;
+    }
+
+    .videos__heading {
+      width: 370px;
+      font-size: 28px;
+      line-height: 32px;
+    }
+  }
 }
