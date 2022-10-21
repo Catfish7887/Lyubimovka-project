@@ -1,0 +1,38 @@
+.photo {
+  width: 100%;
+  padding-top: 145px;
+}
+
+.photo__container {
+  margin-top: 42px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(206px, 1fr));
+  gap: 1px;
+}
+
+.photo__img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1110px) {
+  .photo__container {
+    grid-template-columns: repeat(3, minmax(206px, 1fr));
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .photo__container {
+    grid-template-columns: repeat(2, minmax(206px, 1fr));
+    row-gap: 2px;
+    column-gap: 3px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .photo {
+    padding-top: 100px;
+  }
+  .photo__container {
+    margin-top: 22px;
+  }
+}
