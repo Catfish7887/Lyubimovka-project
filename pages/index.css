@@ -558,5 +558,76 @@
     line-height: 32px;
   }
 }
+.persons {
+  padding: 123px 0 112px;
+}
+
+.persons__container {
+  padding-top: 58px;
+  padding-left: 17px;
+  width: 930px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 210px);
+  gap: 30px;
+}
+
+.person {
+  display: grid;
+}
+
+.person__img {
+  width: 210px;
+  height: 265px;
+  margin-bottom: 16px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.person__name {
+  margin: 0;
+  width: 190px;
+  word-break: break-all;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  color: #242424;
+}
+
+.person__about {
+  margin: 8px 0 0;
+  width: 177px;
+  justify-self: end;
+  word-break: break-all;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #242424;
+}
+
+@media screen and (max-width: 970px) {
+  .persons__container {
+    padding-left: 25px;
+  }
+}
+@media screen and (max-width: 930px) {
+  .persons__container {
+    width: 100%;
+    overflow: scroll;
+  }
+}
+@media screen and (max-width: 768px) {
+  .persons {
+    padding: 100px 0;
+  }
+  .persons__container {
+    padding-top: 24px;
+  }
+  .person__img {
+    filter: grayscale(100%);
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
