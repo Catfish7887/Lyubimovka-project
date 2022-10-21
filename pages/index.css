@@ -363,26 +363,197 @@
     margin-top: 22px;
   }
 }
-.section-title {
+.performances {
   margin: 0 auto;
-  padding-right: 148px;
+  padding: 122px 15px 93px;
+}
+
+.performances__row-block {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  padding: 56px 0 0 13%;
+  overflow: scroll;
+}
+
+.performances__cards {
+  margin: 75px 0 129px;
+  display: flex;
+  justify-content: center;
+  overflow: scroll;
+}
+
+.perf-card {
+  margin: 0 15px 0 0;
+  padding: 0;
+  min-width: 450px;
+  display: grid;
+  column-gap: 31px;
+  grid-template-columns: 120px 1fr 1fr;
+  grid-template-areas: "image date time" "image title title" "image details details" "image info info" "image buttons buttons";
+  border-right: 1px solid #242424;
+  box-sizing: border-box;
+}
+
+.perf-card:last-of-type {
+  border-right: none;
+  margin: 0;
+  padding: 0;
+}
+
+.perf-card__image {
+  width: 120px;
+  height: 161px;
+  object-fit: cover;
+  grid-area: image;
+}
+
+.perf-card__date {
+  margin: 0;
+  padding: 0;
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  color: #242424;
+  grid-area: date;
+}
+
+.perf-card__date_time {
+  margin: 0 0 0 11px;
+  grid-area: time;
+}
+
+.perf-card__title {
+  margin: 4px 0 16px;
+  padding: 0;
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 38px;
+  color: #242424;
+  grid-area: title;
+}
+
+.perf-card__details {
+  margin: 0 0 0 30px;
+  padding: 0;
+  width: 240px;
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242424;
+  grid-area: details;
+}
+
+.perf-card__info {
+  margin: 20px 0 16px;
+  padding: 0;
+  max-width: 150px;
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #242424;
+  grid-area: info;
+}
+
+.perf-card__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  grid-area: buttons;
+}
+
+.perf-card__button {
+  margin: 0;
+  padding: 8px 0 10px 29px;
+  width: 154px;
+  border: 0;
+  border-left: 1px solid #242424;
+  border-bottom: 1px solid #242424;
+  background: url(../images/button-arrow-right-dark.svg) no-repeat left center;
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 14px;
+  color: #242424;
+  text-align: left;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .performances__cards {
+    margin: 34px 0 32px;
+  }
+  .perf-card {
+    margin: 0;
+    min-width: 364px;
+    column-gap: 29px;
+    grid-template-columns: 92px 110px 1fr;
+    grid-template-areas: "image date time" "image title title" "image details details" "image info info" "buttons buttons buttons";
+  }
+  .perf-card__image {
+    width: 92px;
+    height: 123px;
+    object-fit: cover;
+    grid-area: image;
+  }
+  .perf-card__date_time {
+    margin: 0 0 0 16px;
+  }
+  .perf-card__title {
+    margin: 16px 0 8px;
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .perf-card__details {
+    margin: 0;
+  }
+  .perf-card__info {
+    margin: 8px 0 40px;
+    padding: 0;
+  }
+  .perf-card__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+  }
+  .perf-card__button {
+    padding: 8px 0 10px 29px;
+  }
+}
+.section-title {
+  margin: 0 0 0 25%;
+  padding: 0;
+  max-width: 450px;
+  font-family: "Neue Machina";
+  font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
-  letter-spacing: -0.01em;
   color: #242424;
-  max-width: 568px;
 }
 
-@media screen and (max-width: 764px) {
+.section-title_one-perf {
+  margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
   .section-title {
-    margin-left: 24px;
-    padding-right: 0;
+    margin: 0 0 0 13%;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .section-title {
-    max-width: 369px;
+    margin: 0 auto;
+    max-width: 358px;
     font-size: 28px;
     line-height: 32px;
   }

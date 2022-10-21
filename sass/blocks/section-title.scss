@@ -1,25 +1,32 @@
 //Стили заголовков секций
 .section-title {
-  margin: 0 auto;
-  padding-right: 148px;
+  margin: 0 0 0 25%;
+  padding: 0;
+  max-width: $titleWidthMax;
+  font-family: "Neue Machina";
+  font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
-  letter-spacing: -0.01em;
   color: $dark;
-  max-width: 568px;
 }
 
-@media screen and (max-width: 764px) {
+// Модификатор для секции Performances
+.section-title_one-perf {
+  margin: 0;
+}
+
+// Адаптив
+@media screen and (max-width: 1024px) {
   .section-title {
-    margin-left: 24px;
-    padding-right: 0;
+    margin: 0 0 0 13%;
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
   .section-title {
-    max-width: 369px;
+    margin: 0 auto;
+    max-width: $titleWidthMin;
     font-size: 28px;
     line-height: 32px;
   }
