@@ -185,7 +185,6 @@
     display: none;
   }
 }
-
 .videos__heading {
   margin-top: 98px;
   margin-bottom: 0;
@@ -324,7 +323,10 @@
   }
   .videos__heading {
     width: 370px;
-
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
 .photo {
   width: 100%;
   padding-top: 145px;
@@ -381,7 +383,6 @@
 @media screen and (max-width: 425px) {
   .section-title {
     max-width: 369px;
-
     font-size: 28px;
     line-height: 32px;
   }
