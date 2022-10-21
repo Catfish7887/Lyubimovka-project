@@ -1,85 +1,346 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pages/index.css" />
+    <!-- Нужно будет прописать мета-теги для адаптива -->
+    <title>Любимовка</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="pages/index.css" />
-  <!-- Нужно будет прописать мета-теги для адаптива -->
-  <title>Любимовка</title>
-</head>
+  <body class="page">
+    <header class="header">
+      <img
+        src="./images/logo-header.svg"
+        alt="Любимовка"
+        class="header__logo"
+      />
+      <nav class="header__nav">
+        <a href="/" class="header__link header__link_nav">
+          <img
+            src="./images/link-hover-left.svg"
+            alt=""
+            class="header__link_img" />
+          Афиша
+          <img
+            src="./images/link-hover-right.svg"
+            alt=""
+            class="header__link_img"
+        /></a>
+        <a href="/" class="header__link header__link_nav">
+          <img
+            src="./images/link-hover-left.svg"
+            alt=""
+            class="header__link_img" />
+          Библиотека
+          <img
+            src="./images/link-hover-right.svg"
+            alt=""
+            class="header__link_img"
+        /></a>
+        <a href="/" class="header__link header__link_nav">
+          <img
+            src="./images/link-hover-left.svg"
+            alt=""
+            class="header__link_img" />
+          Проекты
+          <img
+            src="./images/link-hover-right.svg"
+            alt=""
+            class="header__link_img"
+        /></a>
+        <a href="/" class="header__link header__link_nav">
+          <img
+            src="./images/link-hover-left.svg"
+            alt=""
+            class="header__link_img" />
+          История
+          <img
+            src="./images/link-hover-right.svg"
+            alt=""
+            class="header__link_img"
+        /></a>
+        <a href="/" class="header__link header__link_nav">
+          <img
+            src="./images/link-hover-left.svg"
+            alt=""
+            class="header__link_img" />
+          Блог
+          <img
+            src="./images/link-hover-right.svg"
+            alt=""
+            class="header__link_img"
+        /></a>
+        <a href="/" class="header__link header__link_nav">
+          <img
+            src="./images/link-hover-left.svg"
+            alt=""
+            class="header__link_img" />
+          Новости
+          <img
+            src="./images/link-hover-right.svg"
+            alt=""
+            class="header__link_img"
+        /></a>
+        <a href="/" class="header__link header__link_nav">
+          <img
+            src="./images/link-hover-left.svg"
+            alt=""
+            class="header__link_img" />
+          О&nbsp;фестивале
+          <img
+            src="./images/link-hover-right.svg"
+            alt=""
+            class="header__link_img"
+        /></a>
+        <a href="/" class="header__link header__link_nav">
+          <img
+            src="./images/link-hover-left.svg"
+            alt=""
+            class="header__link_img" />
+          Контакты
+          <img
+            src="./images/link-hover-right.svg"
+            alt=""
+            class="header__link_img"
+        /></a>
+      </nav>
+      <div class="header__social">
+        <a href="" class="header__link header__link_social"
+          ><img
+            src="./images/link-hover-left.svg"
+            alt=""
+            class="header__link_img" />
+          fb
+          <img
+            src="./images/link-hover-right.svg"
+            alt=""
+            class="header__link_img"
+        /></a>
+        <a href="" class="header__link header__link_social"
+          ><img
+            src="./images/link-hover-left.svg"
+            alt=""
+            class="header__link_img" />
+          inst
+          <img
+            src="./images/link-hover-right.svg"
+            alt=""
+            class="header__link_img" /></a
+        ><a href="" class="header__link header__link_social"
+          ><img
+            src="./images/link-hover-left.svg"
+            alt=""
+            class="header__link_img" />
+          ytube
+          <img
+            src="./images/link-hover-right.svg"
+            alt=""
+            class="header__link_img"
+        /></a>
+        <a href="" class="header__link header__link_social"
+          ><img
+            src="./images/link-hover-left.svg"
+            alt=""
+            class="header__link_img" />
+          tlgrm
+          <img
+            src="./images/link-hover-right.svg"
+            alt=""
+            class="header__link_img" /></a
+        ><a href="" class="header__link header__link_social"
+          ><img
+            src="./images/link-hover-left.svg"
+            alt=""
+            class="header__link_img" />
+          vk
+          <img
+            src="./images/link-hover-right.svg"
+            alt=""
+            class="header__link_img"
+        /></a>
+      </div>
+      <div class="header__support">
+        <a href="/" class="header__link header__link_support">
+          <img
+            src="./images/link-hover-left.svg"
+            alt=""
+            class="header__link_img"
+          />
+          +&nbsp;ПОДДЕРЖАТЬ
+          <img
+            src="./images/link-hover-right.svg"
+            alt=""
+            class="header__link_img"
+          />
+        </a>
+      </div>
+    </header>
+    <main class="main">
+      <!-- some sections -->
+      <section class="videos">
+        <h2 class="videos__heading">Заголовок с одним видео</h2>
+        <div class="videos__container videos__container_single">
+          <div class="video__element video__element_single">
+            <a class="video__link">
+              <picture>
+                <source
+                  srcset="
+                    https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="video__image"
+                  src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
+                  alt=""
+                />
+              </picture>
+            </a>
+            <button
+              class="video__play-btn"
+              aria-label="Смотреть видео"
+            ></button>
+          </div>
+        </div>
+        <p class="videos__text">
+          Из&nbsp;этого следует два вывода: с&nbsp;одной стороны, искусство
+          не&nbsp;должно быть равно реальности, потому что иначе оно
+          не&nbsp;будет искусством, с&nbsp;другой стороны&nbsp;&mdash; оно
+          должно быть все-таки подобно реальности, иначе мы&nbsp;ничего
+          не&nbsp;поймем, не&nbsp;подключимся и&nbsp;не&nbsp;распознаем замыслы
+          автора. Мне нравится такое определение, что один из&nbsp;видов
+          эстетики&nbsp;&mdash; это, грубо говоря, &laquo;понимание&raquo;
+          чего-то. Если нам нечего понимать, то&nbsp;мы&nbsp;не&nbsp;получим
+          ни&nbsp;удовольствия, ни&nbsp;какого-то чувства, ничего. А&nbsp;для
+          того, чтобы что-то понять, нам должно быть представлено что-то, что
+          не&nbsp;равно само себе. То&nbsp;есть нам показывают или говорят
+          что-то, а&nbsp;мы&nbsp;понимаем, что там есть что-то еще. Вот
+          мы&nbsp;смотрим на&nbsp;античную статую и&nbsp;понимаем, что
+          это&nbsp;&mdash; статуя, но&nbsp;похожа на&nbsp;человека. Если она
+          будет абсолютно такая&nbsp;же как человек, как восковая фигура,
+          то&nbsp;мы&nbsp;поймем, что это уже не&nbsp;искусство. Искусство для
+          того, чтобы люди догадались, домыслили, дочувствовали что-то.
+        </p>
+        <h2 class="videos__heading">Заголовок с двумя видео</h2>
+        <div class="videos__scroll-container">
+          <div class="videos__container">
+            <div class="video__element">
+              <a class="video__link">
+                <picture>
+                  <source
+                    srcset="
+                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="video__image"
+                    src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <button
+                class="video__play-btn"
+                aria-label="Смотреть видео"
+              ></button>
+            </div>
+            <div class="video__element">
+              <a class="video__link">
+                <picture>
+                  <source
+                    srcset="
+                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="video__image"
+                    src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <button
+                class="video__play-btn"
+                aria-label="Смотреть видео"
+              ></button>
+            </div>
+          </div>
+        </div>
+        <h2 class="videos__heading">Заголовок с тремя видео</h2>
+        <div class="videos__scroll-container">
+          <div class="videos__container">
+            <div class="video__element">
+              <a class="video__link">
+                <picture>
+                  <source
+                    srcset="
+                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="video__image"
+                    src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <button
+                class="video__play-btn"
+                aria-label="Смотреть видео"
+              ></button>
+            </div>
+            <div class="video__element">
+              <a class="video__link">
+                <picture>
+                  <source
+                    srcset="
+                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="video__image"
+                    src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <button
+                class="video__play-btn"
+                aria-label="Смотреть видео"
+              ></button>
+            </div>
+            <div class="video__element">
+              <a class="video__link">
+                <picture>
+                  <source
+                    srcset="
+                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="video__image"
+                    src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <button
+                class="video__play-btn"
+                aria-label="Смотреть видео"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<body class="page">
-  <header class="header">
-    <img src="./images/logo-header.svg" alt="Любимовка" class="header__logo" />
-    <nav class="header__nav">
-      <a href="/" class="header__link header__link_nav">
-        <img src="./images/link-hover-left.svg" alt="" class="header__link_img" />
-        Афиша
-        <img src="./images/link-hover-right.svg" alt="" class="header__link_img" /></a>
-      <a href="/" class="header__link header__link_nav">
-        <img src="./images/link-hover-left.svg" alt="" class="header__link_img" />
-        Библиотека
-        <img src="./images/link-hover-right.svg" alt="" class="header__link_img" /></a>
-      <a href="/" class="header__link header__link_nav">
-        <img src="./images/link-hover-left.svg" alt="" class="header__link_img" />
-        Проекты
-        <img src="./images/link-hover-right.svg" alt="" class="header__link_img" /></a>
-      <a href="/" class="header__link header__link_nav">
-        <img src="./images/link-hover-left.svg" alt="" class="header__link_img" />
-        История
-        <img src="./images/link-hover-right.svg" alt="" class="header__link_img" /></a>
-      <a href="/" class="header__link header__link_nav">
-        <img src="./images/link-hover-left.svg" alt="" class="header__link_img" />
-        Блог
-        <img src="./images/link-hover-right.svg" alt="" class="header__link_img" /></a>
-      <a href="/" class="header__link header__link_nav">
-        <img src="./images/link-hover-left.svg" alt="" class="header__link_img" />
-        Новости
-        <img src="./images/link-hover-right.svg" alt="" class="header__link_img" /></a>
-      <a href="/" class="header__link header__link_nav">
-        <img src="./images/link-hover-left.svg" alt="" class="header__link_img" />
-        О&nbsp;фестивале
-        <img src="./images/link-hover-right.svg" alt="" class="header__link_img" /></a>
-      <a href="/" class="header__link header__link_nav">
-        <img src="./images/link-hover-left.svg" alt="" class="header__link_img" />
-        Контакты
-        <img src="./images/link-hover-right.svg" alt="" class="header__link_img" /></a>
-    </nav>
-    <div class="header__social">
-      <a href="" class="header__link header__link_social"><img src="./images/link-hover-left.svg" alt=""
-          class="header__link_img" />
-        fb
-        <img src="./images/link-hover-right.svg" alt="" class="header__link_img" /></a>
-      <a href="" class="header__link header__link_social"><img src="./images/link-hover-left.svg" alt=""
-          class="header__link_img" />
-        inst
-        <img src="./images/link-hover-right.svg" alt="" class="header__link_img" /></a><a href=""
-        class="header__link header__link_social"><img src="./images/link-hover-left.svg" alt=""
-          class="header__link_img" />
-        ytube
-        <img src="./images/link-hover-right.svg" alt="" class="header__link_img" /></a>
-      <a href="" class="header__link header__link_social"><img src="./images/link-hover-left.svg" alt=""
-          class="header__link_img" />
-        tlgrm
-        <img src="./images/link-hover-right.svg" alt="" class="header__link_img" /></a><a href=""
-        class="header__link header__link_social"><img src="./images/link-hover-left.svg" alt=""
-          class="header__link_img" />
-        vk
-        <img src="./images/link-hover-right.svg" alt="" class="header__link_img" /></a>
-    </div>
-    <div class="header__support">
-      <a href="/" class="header__link header__link_support">
-        <img src="./images/link-hover-left.svg" alt="" class="header__link_img" />
-        +&nbsp;ПОДДЕРЖАТЬ
-        <img src="./images/link-hover-right.svg" alt="" class="header__link_img" />
-      </a>
-    </div>
-  </header>
-  <main class="main">
-    <!-- some sections -->
-     <section class="photo">
+      <section class="photo">
         <h2 class="section-title">Заголовок блока с фотографиями</h2>
         <div class="photo__container">
           <img src="./images/photo-img-1.png" alt="сцена" class="photo__img" />
@@ -116,97 +377,9 @@
           />
         </div>
       </section>
-
-    <section class="videos">
-      <h2 class="videos__heading">Загололвок с одним видео</h2>
-      <div class="videos__container videos__container_single">
-        <div class="video__element video__element_single">
-          <a class="video__link">
-            <picture>
-              <source srcset="https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp" type="image/webp" />
-              <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt=''>
-            </picture>
-          </a>
-          <button class="video__play-btn" aria-label="Смотреть видео">
-          </button>
-        </div>
-      </div>
-      <p class="videos__text">Из&nbsp;этого следует два вывода: с&nbsp;одной стороны, искусство не&nbsp;должно быть
-        равно реальности, потому что иначе оно не&nbsp;будет искусством, с&nbsp;другой стороны&nbsp;&mdash; оно должно
-        быть все-таки подобно реальности, иначе мы&nbsp;ничего не&nbsp;поймем, не&nbsp;подключимся
-        и&nbsp;не&nbsp;распознаем замыслы автора. Мне нравится такое определение, что один из&nbsp;видов
-        эстетики&nbsp;&mdash; это, грубо говоря, &laquo;понимание&raquo; чего-то. Если нам нечего понимать,
-        то&nbsp;мы&nbsp;не&nbsp;получим ни&nbsp;удовольствия, ни&nbsp;какого-то чувства, ничего. А&nbsp;для того, чтобы
-        что-то понять, нам должно быть представлено что-то, что не&nbsp;равно само себе. То&nbsp;есть нам показывают или
-        говорят что-то, а&nbsp;мы&nbsp;понимаем, что там есть что-то еще. Вот мы&nbsp;смотрим на&nbsp;античную статую
-        и&nbsp;понимаем, что это&nbsp;&mdash; статуя, но&nbsp;похожа на&nbsp;человека. Если она будет абсолютно
-        такая&nbsp;же как человек, как восковая фигура, то&nbsp;мы&nbsp;поймем, что это уже не&nbsp;искусство. Искусство
-        для того, чтобы люди догадались, домыслили, дочувствовали что-то.
-      </p>
-      <h2 class="videos__heading">Загололвок с двумя видео</h2>
-      <div class="videos__scroll-container">
-        <div class="videos__container">
-          <div class="video__element">
-            <a class="video__link">
-              <picture>
-                <source srcset="https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp" type="image/webp" />
-                <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt=''>
-              </picture>
-            </a>
-            <button class="video__play-btn" aria-label="Смотреть видео">
-            </button>
-          </div>
-          <div class="video__element">
-            <a class="video__link">
-              <picture>
-                <source srcset="https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp" type="image/webp" />
-                <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt=''>
-              </picture>
-            </a>
-            <button class="video__play-btn" aria-label="Смотреть видео">
-            </button>
-          </div>
-        </div>
-      </div>
-      <h2 class="videos__heading">Загололвок с тремя видео</h2>
-      <div class="videos__scroll-container">
-        <div class="videos__container">
-          <div class="video__element">
-            <a class="video__link">
-              <picture>
-                <source srcset="https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp" type="image/webp" />
-                <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt=''>
-              </picture>
-            </a>
-            <button class="video__play-btn" aria-label="Смотреть видео">
-            </button>
-          </div>
-          <div class="video__element">
-            <a class="video__link">
-              <picture>
-                <source srcset="https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp" type="image/webp" />
-                <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt=''>
-              </picture>
-            </a>
-            <button class="video__play-btn" aria-label="Смотреть видео">
-            </button>
-          </div>
-          <div class="video__element">
-            <a class="video__link">
-              <picture>
-                <source srcset="https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp" type="image/webp" />
-                <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt=''>
-              </picture>
-            </a>
-            <button class="video__play-btn" aria-label="Смотреть видео">
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- some sections -->
-  </main>
-  <footer class="footer"></footer>
-  <!-- <script src="./pages/index.js"></script> -->
-</body>
+      <!-- some sections -->
+    </main>
+    <footer class="footer"></footer>
+    <!-- <script src="./pages/index.js"></script> -->
+  </body>
 </html>

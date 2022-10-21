@@ -6,7 +6,7 @@ $margLeft1280: auto;
 .videos__heading {
   margin-top: 98px;
   margin-bottom: 0;
-  margin-left: $margLeft;
+  margin-left: $titleMarginLeft;
   font-size: 40px;
   line-height: 40px;
   max-width: 716px;
@@ -34,7 +34,7 @@ $margLeft1280: auto;
 }
 
 .videos__scroll-container {
- margin: 37px auto 0;
+  margin: 37px auto 0;
 }
 
 .videos__text {
