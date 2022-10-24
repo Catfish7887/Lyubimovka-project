@@ -79,106 +79,182 @@
   </header>
   <main class="main">
     <!-- some sections -->
-    <section class="videos">
-      <h2 class="section-title">Заголовок с одним видео</h2>
-      <div class="videos__container videos__container_single">
-        <div class="video__element video__element_single">
-          <a class="video__link">
-            <picture>
-              <source srcset="
+    <section class="about">        
+        <div class="about__intro">
+          <button class="about__button"></button>
+          <h1 class="about__title">Любимовка. Ещё</h1>
+          <p class="about__text">Межсезонные читки и обсуждение пьес из списка отмеченных отборщиками Любимовки. Можно слушать, обсуждать и даже участвовать.</p>
+          <img 
+            class="about__image"
+            src="./images/lyubimovka_intro.svg"      
+            alt="Любимовка интро" />           
+        </div>
+        <div class="about__project">
+          <h2 class="about__project-title">О проекте</h2>
+          <p class="about__project-text">За первый сезон проекта организаторы провели 17 мероприятий вместе с режиссёрами и актёрами московских театров: Театра.doc, Театрального Центра им. Вс. Мейерхольда, Гоголь-центра, Электротеатра «Станиславский», Ленкома.</p>
+        </div>
+      </section>
+      <!-- some sections -->
+      <section class="videos">
+        <h2 class="section-title">Заголовок с одним видео</h2>
+        <div class="videos__container videos__container_single">
+          <div class="video__element video__element_single">
+            <a class="video__link">
+              <picture>
+                <source
+                  srcset="
                     https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
-                  " type="image/webp" />
-              <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt="" />
-            </picture>
-          </a>
-          <button class="video__play-btn" aria-label="Смотреть видео"></button>
-        </div>
-      </div>
-      <p class="videos__text">
-        Из&nbsp;этого следует два вывода: с&nbsp;одной стороны, искусство
-        не&nbsp;должно быть равно реальности, потому что иначе оно
-        не&nbsp;будет искусством, с&nbsp;другой стороны&nbsp;&mdash; оно
-        должно быть все-таки подобно реальности, иначе мы&nbsp;ничего
-        не&nbsp;поймем, не&nbsp;подключимся и&nbsp;не&nbsp;распознаем замыслы
-        автора. Мне нравится такое определение, что один из&nbsp;видов
-        эстетики&nbsp;&mdash; это, грубо говоря, &laquo;понимание&raquo;
-        чего-то. Если нам нечего понимать, то&nbsp;мы&nbsp;не&nbsp;получим
-        ни&nbsp;удовольствия, ни&nbsp;какого-то чувства, ничего. А&nbsp;для
-        того, чтобы что-то понять, нам должно быть представлено что-то, что
-        не&nbsp;равно само себе. То&nbsp;есть нам показывают или говорят
-        что-то, а&nbsp;мы&nbsp;понимаем, что там есть что-то еще. Вот
-        мы&nbsp;смотрим на&nbsp;античную статую и&nbsp;понимаем, что
-        это&nbsp;&mdash; статуя, но&nbsp;похожа на&nbsp;человека. Если она
-        будет абсолютно такая&nbsp;же как человек, как восковая фигура,
-        то&nbsp;мы&nbsp;поймем, что это уже не&nbsp;искусство. Искусство для
-        того, чтобы люди догадались, домыслили, дочувствовали что-то.
-      </p>
-      <h2 class="section-title">Заголовок с двумя видео</h2>
-      <div class="videos__scroll-container">
-        <div class="videos__container">
-          <div class="video__element">
-            <a class="video__link">
-              <picture>
-                <source srcset="
-                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
-                    " type="image/webp" />
-                <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt="" />
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="video__image"
+                  src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
+                  alt=""
+                />
               </picture>
             </a>
-            <button class="video__play-btn" aria-label="Смотреть видео"></button>
-          </div>
-          <div class="video__element">
-            <a class="video__link">
-              <picture>
-                <source srcset="
-                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
-                    " type="image/webp" />
-                <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt="" />
-              </picture>
-            </a>
-            <button class="video__play-btn" aria-label="Смотреть видео"></button>
+            <button
+              class="video__play-btn"
+              aria-label="Смотреть видео"
+            ></button>
           </div>
         </div>
-      </div>
-      <h2 class="section-title">Заголовок с тремя видео</h2>
-      <div class="videos__scroll-container">
-        <div class="videos__container">
-          <div class="video__element">
-            <a class="video__link">
-              <picture>
-                <source srcset="
+        <p class="videos__text">
+          Из&nbsp;этого следует два вывода: с&nbsp;одной стороны, искусство
+          не&nbsp;должно быть равно реальности, потому что иначе оно
+          не&nbsp;будет искусством, с&nbsp;другой стороны&nbsp;&mdash; оно
+          должно быть все-таки подобно реальности, иначе мы&nbsp;ничего
+          не&nbsp;поймем, не&nbsp;подключимся и&nbsp;не&nbsp;распознаем замыслы
+          автора. Мне нравится такое определение, что один из&nbsp;видов
+          эстетики&nbsp;&mdash; это, грубо говоря, &laquo;понимание&raquo;
+          чего-то. Если нам нечего понимать, то&nbsp;мы&nbsp;не&nbsp;получим
+          ни&nbsp;удовольствия, ни&nbsp;какого-то чувства, ничего. А&nbsp;для
+          того, чтобы что-то понять, нам должно быть представлено что-то, что
+          не&nbsp;равно само себе. То&nbsp;есть нам показывают или говорят
+          что-то, а&nbsp;мы&nbsp;понимаем, что там есть что-то еще. Вот
+          мы&nbsp;смотрим на&nbsp;античную статую и&nbsp;понимаем, что
+          это&nbsp;&mdash; статуя, но&nbsp;похожа на&nbsp;человека. Если она
+          будет абсолютно такая&nbsp;же как человек, как восковая фигура,
+          то&nbsp;мы&nbsp;поймем, что это уже не&nbsp;искусство. Искусство для
+          того, чтобы люди догадались, домыслили, дочувствовали что-то.
+        </p>
+        <h2 class="section-title">Заголовок с двумя видео</h2>
+        <div class="videos__scroll-container">
+          <div class="videos__container">
+            <div class="video__element">
+              <a class="video__link">
+                <picture>
+                  <source
+                    srcset="
                       https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
-                    " type="image/webp" />
-                <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt="" />
-              </picture>
-            </a>
-            <button class="video__play-btn" aria-label="Смотреть видео"></button>
-          </div>
-          <div class="video__element">
-            <a class="video__link">
-              <picture>
-                <source srcset="
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="video__image"
+                    src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <button
+                class="video__play-btn"
+                aria-label="Смотреть видео"
+              ></button>
+            </div>
+            <div class="video__element">
+              <a class="video__link">
+                <picture>
+                  <source
+                    srcset="
                       https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
-                    " type="image/webp" />
-                <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt="" />
-              </picture>
-            </a>
-            <button class="video__play-btn" aria-label="Смотреть видео"></button>
-          </div>
-          <div class="video__element">
-            <a class="video__link">
-              <picture>
-                <source srcset="
-                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
-                    " type="image/webp" />
-                <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt="" />
-              </picture>
-            </a>
-            <button class="video__play-btn" aria-label="Смотреть видео"></button>
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="video__image"
+                    src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <button
+                class="video__play-btn"
+                aria-label="Смотреть видео"
+              ></button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+        <h2 class="section-title">Заголовок с тремя видео</h2>
+        <div class="videos__scroll-container">
+          <div class="videos__container">
+            <div class="video__element">
+              <a class="video__link">
+                <picture>
+                  <source
+                    srcset="
+                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="video__image"
+                    src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <button
+                class="video__play-btn"
+                aria-label="Смотреть видео"
+              ></button>
+            </div>
+            <div class="video__element">
+              <a class="video__link">
+                <picture>
+                  <source
+                    srcset="
+                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="video__image"
+                    src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <button
+                class="video__play-btn"
+                aria-label="Смотреть видео"
+              ></button>
+            </div>
+            <div class="video__element">
+              <a class="video__link">
+                <picture>
+                  <source
+                    srcset="
+                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    class="video__image"
+                    src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
+                    alt=""
+                  />
+                </picture>
+              </a>
+              <button
+                class="video__play-btn"
+                aria-label="Смотреть видео"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </section>
 
     <section class="photo">
       <h2 class="section-title">Заголовок блока с фотографиями</h2>
@@ -446,6 +522,7 @@
             <span class="card__year">2020</span>
           </article>
         </div>
+
       </div>
     </section>
 
@@ -485,3 +562,4 @@
 </body>
 
 </html>
+
