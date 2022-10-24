@@ -333,7 +333,7 @@
 .about__button {  
   border: 0;
   margin: 33px auto auto 30px;
-  background: url(../../images/button-projects.svg) no-repeat center right;
+  background: url('../images/button-projects.svg') no-repeat center right;
   width: 120px;
   height: 32px;
 }
@@ -508,7 +508,7 @@
 }
 
 .video__play-btn {
-  background-image: url("../../images/VideoPlayBtn.svg");
+  background-image: url("../images/VideoPlayBtn.svg");
   background-color: transparent;
   border: none;
   padding: 0;
