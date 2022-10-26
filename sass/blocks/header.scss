@@ -14,6 +14,18 @@
   height: 35px;
 }
 
+.header__mobile-buttons {
+  display: flex;
+  padding: 0 0 0 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__burger {
+  cursor: pointer;
+}
+
 .header__nav {
   padding: 0px 29px 0 33px;
   display: flex;
@@ -62,18 +74,17 @@
   line-height: 17px;
 }
 
-// Cтили для ссылок при наведении мышкой.
+//Cтили для ссылок при наведении мышкой.
 .header__link_img {
+  visibility: hidden;
   width: 10px;
   height: 24px;
 }
 
-.header__link .header__link_img {
-  visibility: hidden;
-}
-
-.header__link:hover > .header__link_img {
-  visibility: visible;
+.header__link:hover {
+  .header__link_img {
+    visibility: visible;
+  }
 }
 
 // Cтили для адаптива.
@@ -171,7 +182,19 @@
   }
 }
 
+@media screen and (min-width: 769px) {
+  .header__mobile-buttons {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .header {
+    padding: 10px 24px 0;
+    border-bottom: 0;
+    align-items: center;
+  }
+
   .header__nav,
   .header__social,
   .header__support {
