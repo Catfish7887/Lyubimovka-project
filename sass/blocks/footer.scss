@@ -1,0 +1,262 @@
+.footer {
+  max-width: 1440px;
+  min-height: 492px;
+  box-sizing: border-box;
+  padding: 42px 92px 56px 32px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: repeat(3, max-content);
+  column-gap: 82px;
+  row-gap: 21px;
+}
+
+.footer__partners {
+  display: flex;
+  min-height: 81px;
+}
+
+.footer__partners-title {
+  margin: 0;
+  width: 145px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark;
+}
+
+.footer__partners-span {
+  font-size: 14px;
+  color: $dark;
+  display: none;
+}
+
+.footer__partners-links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 31px;
+}
+
+.footer__partners-img {
+  width: 90px;
+}
+
+.footer__columns {
+  grid-column: 2/3;
+  max-width: 1141px;
+  display: grid;
+  grid-template-columns: 1fr 181px 175px 212px;
+}
+
+.footer__column-place {
+  margin: 0;
+  width: 231px;
+  font-family: "Neue Machina";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer__column-addr {
+  margin: 0;
+  margin-top: 15px;
+  width: 231px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.footer__column_type_adress {
+  max-width: 570px;
+}
+
+.footer__column_type_links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  align-self: start;
+  gap: 12px;
+}
+
+.footer__column-link {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: $dark;
+}
+
+.footer__info {
+  grid-column: 2/3;
+  max-width: 1141px;
+  padding-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 181px 175px 212px;
+}
+
+.footer__info-security {
+  display: flex;
+  gap: 32px;
+}
+
+.footer__info-copyright {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer__info-develop {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer__info-design {
+  grid-column: 3/4;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 27px auto;
+  column-gap: 4px;
+  font-size: 14px;
+}
+
+.footer__info-icon {
+  grid-row: 1/3;
+}
+
+.footer__info-link {
+  text-decoration: none;
+  color: $dark;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1243px) {
+  .footer__info-security {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, max-content);
+    column-gap: 0px;
+  }
+  .footer__partners {
+    grid-column: 1/3;
+  }
+  .footer__columns {
+    grid-column: 1/3;
+    grid-row: 2/4;
+  }
+  .footer__info {
+    grid-column: 1/3;
+  }
+}
+
+@media screen and (max-width: 964px) {
+  .footer {
+    padding: 56px 0 74px;
+    gap: 0px;
+  }
+
+  .footer__logo {
+    margin-left: 55px;
+  }
+
+  .footer__columns {
+    width: 278px;
+    margin-left: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer__column_type_adress {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .footer__column-addr {
+    font-size: 16px;
+  }
+
+  .footer__column_type_links {
+    margin-top: 62px;
+    gap: 16px;
+  }
+
+  .footer__column_type_links:last-child {
+    margin-top: 56px;
+  }
+
+  .footer__column-link {
+    font-size: 18px;
+  }
+
+  .footer__partners-title {
+    display: none;
+  }
+
+  .footer__partners {
+    padding: 85px 0 94px;
+  }
+
+  .footer__partners-links {
+    box-sizing: border-box;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 60px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .footer__partners-link {
+    text-decoration: none;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .footer__partners-span {
+    display: block;
+  }
+
+  .footer__info {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-top: solid 1px $dark;
+  }
+
+  .footer__info-security {
+    padding: 32px 0 60px;
+    display: grid;
+    gap: 12px;
+  }
+
+  .footer__info-develop {
+    padding-top: 15px;
+  }
+
+  .footer__info-link {
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer__info {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 30px;
+  }
+
+  .footer__info-develop {
+    display: grid;
+  }
+}
