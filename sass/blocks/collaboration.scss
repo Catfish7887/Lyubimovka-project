@@ -90,3 +90,26 @@
     top: -25px;
     left: -30px;
 }
+
+@media screen and (max-width: 855px){
+    .collab__youtube{
+      grid-template-columns: 1fr;
+      grid-auto-flow: row;
+      column-gap: 16px;
+    }
+    .collab__header{
+      grid-row: 1;
+      place-self: center;
+    }
+  
+    .collab__text{    
+      height: 112px;
+      grid-row: 2;
+      place-self: center;
+      margin: auto 5% auto 15%;
+    }
+    .collab__button{
+      grid-row: 3;
+      place-self: center;
+    }  
+  }
