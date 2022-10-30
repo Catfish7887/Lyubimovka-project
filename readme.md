@@ -1,3 +1,3 @@
-Lets start:)
-Lyubimovka project in progress
-Optional project
+# Lets start:)
+## Lyubimovka in progress
+## Optional project
