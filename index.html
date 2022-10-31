@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,569 +9,479 @@
   <!-- Нужно будет прописать мета-теги для адаптива -->
   <title>Любимовка</title>
 </head>
-  <body class="page">
-    <header class="header">
-      <img
-        src="./images/logo-header.svg"
-        alt="Любимовка"
-        class="header__logo"
-      />
-      <div class="header__mobile-buttons">
-        <button class="about__button about__button_header">
+
+<body class="page">
+  <header class="header">
+    <img src="./images/logo-header.svg" alt="Любимовка" class="header__logo" />
+    <div class="header__mobile-buttons">
+      <button class="about__button about__button_header">
+        ПРОЕКТЫ
+      </button>
+      <svg class="header__burger" width="52" height="52" viewBox="0 0 72 72" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <rect width="72" height="72" fill="#242424" />
+        <line x1="46" y1="29" x2="26" y2="29" stroke="#ECEBE8" stroke-width="2" />
+        <line x1="46" y1="35" x2="26" y2="35" stroke="#ECEBE8" stroke-width="2" />
+        <line x1="46" y1="41" x2="26" y2="41" stroke="#ECEBE8" stroke-width="2" />
+      </svg>
+    </div>
+    <nav class="header__nav">
+      <a href="/" class="header__link header__link_nav">
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424" />
+        </svg>
+        Афиша
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424" />
+        </svg>
+      </a>
+      <a href="/" class="header__link header__link_nav">
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424" />
+        </svg>
+        Библиотека
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424" />
+        </svg>
+      </a>
+      <a href="/" class="header__link header__link_nav">
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424" />
+        </svg>
+        Проекты
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424" />
+        </svg>
+      </a>
+      <a href="/" class="header__link header__link_nav">
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424" />
+        </svg>
+        История
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424" />
+        </svg>
+      </a>
+      <a href="/" class="header__link header__link_nav">
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424" />
+        </svg>
+        Блог
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424" />
+        </svg>
+      </a>
+      <a href="/" class="header__link header__link_nav">
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424" />
+        </svg>
+        Новости
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424" />
+        </svg>
+      </a>
+      <a href="/" class="header__link header__link_nav">
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424" />
+        </svg>
+        О&nbsp;фестивале
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424" />
+        </svg>
+      </a>
+      <a href="/" class="header__link header__link_nav">
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424" />
+        </svg>
+        Контакты
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424" />
+        </svg>
+      </a>
+    </nav>
+    <div class="header__social">
+      <a href="" class="header__link header__link_social">
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424" />
+        </svg>
+        fb
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424" />
+        </svg>
+      </a>
+      <a href="" class="header__link header__link_social">
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424" />
+        </svg>
+        inst
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424" />
+        </svg>
+      </a>
+      <a href="" class="header__link header__link_social">
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424" />
+        </svg>
+        ytube
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424" />
+        </svg>
+      </a>
+      <a href="" class="header__link header__link_social">
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424" />
+        </svg>
+        tlgrm
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424" />
+        </svg>
+      </a>
+      <a href="" class="header__link header__link_social">
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424" />
+        </svg>
+        vk
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424" />
+        </svg>
+      </a>
+    </div>
+    <div class="header__support">
+      <a href="/" class="header__link header__link_support">
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424" />
+        </svg>
+        +&nbsp;ПОДДЕРЖАТЬ
+        <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424" />
+        </svg>
+      </a>
+    </div>
+  </header>
+  <main class="main">
+    <section class="about">
+      <div class="about__intro">
+        <button class="about__button">
           ПРОЕКТЫ
         </button>
-        <svg class="header__burger" width="52" height="52" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="72" height="72" fill="#242424"/>
-          <line x1="46" y1="29" x2="26" y2="29" stroke="#ECEBE8" stroke-width="2"/>
-          <line x1="46" y1="35" x2="26" y2="35" stroke="#ECEBE8" stroke-width="2"/>
-          <line x1="46" y1="41" x2="26" y2="41" stroke="#ECEBE8" stroke-width="2"/>
-          </svg>
+        <h1 class="about__title">Любимовка. Ещё</h1>
+        <p class="about__text">
+          Межсезонные читки и обсуждение пьес из списка отмеченных отборщиками
+          Любимовки. Можно слушать, обсуждать и даже участвовать.
+        </p>
+        <img class="about__image" src="./images/lyubimovka_intro.svg" alt="Любимовка интро" />
       </div>
-      <nav class="header__nav">
-        <a href="/" class="header__link header__link_nav">
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424"/>
-          </svg>
-          Афиша
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424"/>
-          </svg>
-        </a>
-        <a href="/" class="header__link header__link_nav">
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424"/>
-          </svg>
-          Библиотека
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424"/>
-          </svg>
-        </a>
-        <a href="/" class="header__link header__link_nav">
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424"/>
-          </svg>
-          Проекты
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424"/>
-          </svg>
-        </a>
-        <a href="/" class="header__link header__link_nav">
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424"/>
-          </svg>
-          История
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424"/>
-          </svg>
-        </a>
-        <a href="/" class="header__link header__link_nav">
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424"/>
-          </svg>
-          Блог
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424"/>
-          </svg>
-        </a>
-        <a href="/" class="header__link header__link_nav">
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424"/>
-          </svg>
-          Новости
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424"/>
-          </svg>
-        </a>
-        <a href="/" class="header__link header__link_nav">
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424"/>
-          </svg>
-          О&nbsp;фестивале
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424"/>
-          </svg>
-        </a>
-        <a href="/" class="header__link header__link_nav">
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424"/>
-          </svg>
-          Контакты
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424"/>
-          </svg>
-        </a>
-      </nav>
-      <div class="header__social">
-        <a href="" class="header__link header__link_social">
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424"/>
-          </svg>
-          fb
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424"/>
-          </svg>
-        </a>
-        <a href="" class="header__link header__link_social">
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424"/>
-          </svg>
-          inst
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424"/>
-          </svg>
-        </a>
-        <a href="" class="header__link header__link_social">
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424"/>
-          </svg>
-          ytube
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424"/>
-          </svg>
-        </a>
-        <a href="" class="header__link header__link_social">
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424"/>
-          </svg>
-          tlgrm
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424"/>
-          </svg>
-        </a>
-        <a href="" class="header__link header__link_social">
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424"/>
-          </svg>
-          vk
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424"/>
-          </svg>
-        </a>
+      <div class="about__project">
+        <h2 class="about__project-title">О проекте</h2>
+        <p class="about__project-text">
+          За первый сезон проекта организаторы провели 17 мероприятий вместе с
+          режиссёрами и актёрами московских театров: Театра.doc, Театрального
+          Центра им. Вс. Мейерхольда, Гоголь-центра, Электротеатра
+          «Станиславский», Ленкома.
+        </p>
       </div>
-      <div class="header__support">
-        <a href="/" class="header__link header__link_support">
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M11 25C5.47715 25 1 19.6274 1 13C1 6.37258 5.47715 1 11 1" stroke="#242424"/>
-          </svg>
-          +&nbsp;ПОДДЕРЖАТЬ
-          <svg class="header__link_img" viewBox="0 0 11 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 25C5.52285 25 10 19.6274 10 13C10 6.37258 5.52285 1 0 1" stroke="#242424"/>
-          </svg>
-        </a>
-      </div>
-    </header>
-    <main class="main">
-      <section class="about">        
-        <div class="about__intro">
-          <button class="about__button">
-            ПРОЕКТЫ
-          </button>
-          <h1 class="about__title">Любимовка. Ещё</h1>
-          <p class="about__text">
-            Межсезонные читки и обсуждение пьес из списка отмеченных отборщиками
-            Любимовки. Можно слушать, обсуждать и даже участвовать.
-          </p>
-          <img
-            class="about__image"
-            src="./images/lyubimovka_intro.svg"
-            alt="Любимовка интро"
-          />
+    </section>
+    <section class="videos">
+      <h2 class="section-title">Заголовок с одним видео</h2>
+      <div class="videos__container videos__container_single">
+        <div class="video__element video__element_single">
+          <a class="video__link">
+            <picture>
+              <source srcset="
+                    https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
+                  " type="image/webp" />
+              <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt="" />
+            </picture>
+          </a>
+          <button class="video__play-btn" aria-label="Смотреть видео"></button>
         </div>
-        <div class="about__project">
-          <h2 class="about__project-title">О проекте</h2>
-          <p class="about__project-text">
-            За первый сезон проекта организаторы провели 17 мероприятий вместе с
-            режиссёрами и актёрами московских театров: Театра.doc, Театрального
-            Центра им. Вс. Мейерхольда, Гоголь-центра, Электротеатра
-            «Станиславский», Ленкома.
-          </p>
-        </div>
-      </section>
-      <section class="videos">
-        <h2 class="section-title">Заголовок с одним видео</h2>
-        <div class="videos__container videos__container_single">
-          <div class="video__element video__element_single">
+      </div>
+      <p class="videos__text">
+        Из&nbsp;этого следует два вывода: с&nbsp;одной стороны, искусство
+        не&nbsp;должно быть равно реальности, потому что иначе оно
+        не&nbsp;будет искусством, с&nbsp;другой стороны&nbsp;&mdash; оно
+        должно быть все-таки подобно реальности, иначе мы&nbsp;ничего
+        не&nbsp;поймем, не&nbsp;подключимся и&nbsp;не&nbsp;распознаем замыслы
+        автора. Мне нравится такое определение, что один из&nbsp;видов
+        эстетики&nbsp;&mdash; это, грубо говоря, &laquo;понимание&raquo;
+        чего-то. Если нам нечего понимать, то&nbsp;мы&nbsp;не&nbsp;получим
+        ни&nbsp;удовольствия, ни&nbsp;какого-то чувства, ничего. А&nbsp;для
+        того, чтобы что-то понять, нам должно быть представлено что-то, что
+        не&nbsp;равно само себе. То&nbsp;есть нам показывают или говорят
+        что-то, а&nbsp;мы&nbsp;понимаем, что там есть что-то еще. Вот
+        мы&nbsp;смотрим на&nbsp;античную статую и&nbsp;понимаем, что
+        это&nbsp;&mdash; статуя, но&nbsp;похожа на&nbsp;человека. Если она
+        будет абсолютно такая&nbsp;же как человек, как восковая фигура,
+        то&nbsp;мы&nbsp;поймем, что это уже не&nbsp;искусство. Искусство для
+        того, чтобы люди догадались, домыслили, дочувствовали что-то.
+      </p>
+      <h2 class="section-title">Заголовок с двумя видео</h2>
+      <div class="videos__scroll-container">
+        <div class="videos__container">
+          <div class="video__element">
             <a class="video__link">
               <picture>
-                <source
-                  srcset="
-                    https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
-                  "
-                  type="image/webp"
-                />
-                <img
-                  class="video__image"
-                  src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
-                  alt=""
-                />
+                <source srcset="
+                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
+                    " type="image/webp" />
+                <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt="" />
               </picture>
             </a>
-            <button
-              class="video__play-btn"
-              aria-label="Смотреть видео"
-            ></button>
+            <button class="video__play-btn" aria-label="Смотреть видео"></button>
+          </div>
+          <div class="video__element">
+            <a class="video__link">
+              <picture>
+                <source srcset="
+                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
+                    " type="image/webp" />
+                <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt="" />
+              </picture>
+            </a>
+            <button class="video__play-btn" aria-label="Смотреть видео"></button>
           </div>
         </div>
-        <p class="videos__text">
-          Из&nbsp;этого следует два вывода: с&nbsp;одной стороны, искусство
-          не&nbsp;должно быть равно реальности, потому что иначе оно
-          не&nbsp;будет искусством, с&nbsp;другой стороны&nbsp;&mdash; оно
-          должно быть все-таки подобно реальности, иначе мы&nbsp;ничего
-          не&nbsp;поймем, не&nbsp;подключимся и&nbsp;не&nbsp;распознаем замыслы
-          автора. Мне нравится такое определение, что один из&nbsp;видов
-          эстетики&nbsp;&mdash; это, грубо говоря, &laquo;понимание&raquo;
-          чего-то. Если нам нечего понимать, то&nbsp;мы&nbsp;не&nbsp;получим
-          ни&nbsp;удовольствия, ни&nbsp;какого-то чувства, ничего. А&nbsp;для
-          того, чтобы что-то понять, нам должно быть представлено что-то, что
-          не&nbsp;равно само себе. То&nbsp;есть нам показывают или говорят
-          что-то, а&nbsp;мы&nbsp;понимаем, что там есть что-то еще. Вот
-          мы&nbsp;смотрим на&nbsp;античную статую и&nbsp;понимаем, что
-          это&nbsp;&mdash; статуя, но&nbsp;похожа на&nbsp;человека. Если она
-          будет абсолютно такая&nbsp;же как человек, как восковая фигура,
-          то&nbsp;мы&nbsp;поймем, что это уже не&nbsp;искусство. Искусство для
-          того, чтобы люди догадались, домыслили, дочувствовали что-то.
-        </p>
-        <h2 class="section-title">Заголовок с двумя видео</h2>
-        <div class="videos__scroll-container">
-          <div class="videos__container">
-            <div class="video__element">
-              <a class="video__link">
-                <picture>
-                  <source
-                    srcset="
+      </div>
+      <h2 class="section-title">Заголовок с тремя видео</h2>
+      <div class="videos__scroll-container">
+        <div class="videos__container">
+          <div class="video__element">
+            <a class="video__link">
+              <picture>
+                <source srcset="
                       https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
-                    "
-                    type="image/webp"
-                  />
-                  <img
-                    class="video__image"
-                    src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
-                    alt=""
-                  />
-                </picture>
-              </a>
-              <button
-                class="video__play-btn"
-                aria-label="Смотреть видео"
-              ></button>
-            </div>
-            <div class="video__element">
-              <a class="video__link">
-                <picture>
-                  <source
-                    srcset="
+                    " type="image/webp" />
+                <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt="" />
+              </picture>
+            </a>
+            <button class="video__play-btn" aria-label="Смотреть видео"></button>
+          </div>
+          <div class="video__element">
+            <a class="video__link">
+              <picture>
+                <source srcset="
                       https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
-                    "
-                    type="image/webp"
-                  />
-                  <img
-                    class="video__image"
-                    src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
-                    alt=""
-                  />
-                </picture>
-              </a>
-              <button
-                class="video__play-btn"
-                aria-label="Смотреть видео"
-              ></button>
-            </div>
+                    " type="image/webp" />
+                <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt="" />
+              </picture>
+            </a>
+            <button class="video__play-btn" aria-label="Смотреть видео"></button>
+          </div>
+          <div class="video__element">
+            <a class="video__link">
+              <picture>
+                <source srcset="
+                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
+                    " type="image/webp" />
+                <img class="video__image" src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg" alt="" />
+              </picture>
+            </a>
+            <button class="video__play-btn" aria-label="Смотреть видео"></button>
           </div>
         </div>
-        <h2 class="section-title">Заголовок с тремя видео</h2>
-        <div class="videos__scroll-container">
-          <div class="videos__container">
-            <div class="video__element">
-              <a class="video__link">
-                <picture>
-                  <source
-                    srcset="
-                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
-                    "
-                    type="image/webp"
-                  />
-                  <img
-                    class="video__image"
-                    src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
-                    alt=""
-                  />
-                </picture>
-              </a>
-              <button
-                class="video__play-btn"
-                aria-label="Смотреть видео"
-              ></button>
-            </div>
-            <div class="video__element">
-              <a class="video__link">
-                <picture>
-                  <source
-                    srcset="
-                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
-                    "
-                    type="image/webp"
-                  />
-                  <img
-                    class="video__image"
-                    src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
-                    alt=""
-                  />
-                </picture>
-              </a>
-              <button
-                class="video__play-btn"
-                aria-label="Смотреть видео"
-              ></button>
-            </div>
-            <div class="video__element">
-              <a class="video__link">
-                <picture>
-                  <source
-                    srcset="
-                      https://i.ytimg.com/vi_webp/-zzxxaBVbRw/maxresdefault.webp
-                    "
-                    type="image/webp"
-                  />
-                  <img
-                    class="video__image"
-                    src="https://i.ytimg.com/vi/-zzxxaBVbRw/maxresdefault.jpg"
-                    alt=""
-                  />
-                </picture>
-              </a>
-              <button
-                class="video__play-btn"
-                aria-label="Смотреть видео"
-              ></button>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="photo">
-        <h2 class="section-title">Заголовок блока с фотографиями</h2>
-        <div class="photo__container">
-          <img src="./images/photo-img-1.png" alt="сцена" class="photo__img" />
-          <img
-            src="./images/photo-img-2.png"
-            alt="актриса"
-            class="photo__img"
-          />
-          <img src="./images/photo-img-3.png" alt="актер" class="photo__img" />
-          <img
-            src="./images/photo-img-4.png"
-            alt="музыкальная группа"
-            class="photo__img"
-          />
-          <img
-            src="./images/photo-img-5.png"
-            alt="собрание"
-            class="photo__img"
-          />
-          <img
-            src="./images/photo-img-6.png"
-            alt="девушка"
-            class="photo__img"
-          />
-          <img
-            src="./images/photo-img-7.png"
-            alt="репетиция"
-            class="photo__img"
-          />
-          <img
-            src="./images/photo-img-8.png"
-            alt="девушка"
-            class="photo__img"
-          />
-        </div>
-      </section>
+    <section class="photo">
+      <h2 class="section-title">Заголовок блока с фотографиями</h2>
+      <div class="photo__container">
+        <img src="./images/photo-img-1.png" alt="сцена" class="photo__img" />
+        <img src="./images/photo-img-2.png" alt="актриса" class="photo__img" />
+        <img src="./images/photo-img-3.png" alt="актер" class="photo__img" />
+        <img src="./images/photo-img-4.png" alt="музыкальная группа" class="photo__img" />
+        <img src="./images/photo-img-5.png" alt="собрание" class="photo__img" />
+        <img src="./images/photo-img-6.png" alt="девушка" class="photo__img" />
+        <img src="./images/photo-img-7.png" alt="репетиция" class="photo__img" />
+        <img src="./images/photo-img-8.png" alt="девушка" class="photo__img" />
+      </div>
+    </section>
 
-      <section class="performances">
-        <h2 class="section-title">
-          Заголовок блока с&nbsp;тремя&nbsp;и&nbsp;более спектаклями
+    <section class="performances">
+      <h2 class="section-title">
+        Заголовок блока с&nbsp;тремя&nbsp;и&nbsp;более спектаклями
+      </h2>
+      <div class="performances__cards">
+        <div class="perf-card">
+          <img src="./images/perf-mother.png" alt="Мама" class="perf-card__image" />
+          <p class="perf-card__date">15 декабря</p>
+          <p class="perf-card__date perf-card__date_time">11:00</p>
+          <h3 class="perf-card__title">МАМА</h3>
+          <p class="perf-card__details">
+            Драматург: Ольга Казакова Режиссёр: Катя Ганюшинаяч
+          </p>
+          <p class="perf-card__info">читка проекта Любимовка.Ещё</p>
+          <div class="perf-card__buttons">
+            <button class="perf-card__button perf-card__button_about">
+              <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z"
+                  fill="#242424" />
+              </svg>
+              <span class="perf-card__button-text">О СПЕКТАКЛЕ</span>
+            </button>
+            <button class="perf-card__button perf-card__button_tickets">
+              <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z"
+                  fill="#242424" />
+              </svg>
+              <span class="perf-card__button-text">БИЛЕТЫ</span>
+            </button>
+          </div>
+        </div>
+        <div class="perf-card">
+          <img src="./images/perf-about-lin.png" alt="Мама" class="perf-card__image" />
+          <p class="perf-card__date">15 декабря</p>
+          <p class="perf-card__date perf-card__date_time">11:00</p>
+          <h3 class="perf-card__title">Про линя</h3>
+          <p class="perf-card__details">
+            Драматург: Ольга Казакова Режиссёр: Катя Ганюшинаяч
+          </p>
+          <p class="perf-card__info">читка проекта Любимовка.Ещё</p>
+          <div class="perf-card__buttons">
+            <button class="perf-card__button perf-card__button_about">
+              <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z"
+                  fill="#242424" />
+              </svg>
+              <span class="perf-card__button-text">О СПЕКТАКЛЕ</span>
+            </button>
+            <button class="perf-card__button perf-card__button_tickets">
+              <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z"
+                  fill="#242424" />
+              </svg>
+              <span class="perf-card__button-text">БИЛЕТЫ</span>
+            </button>
+          </div>
+        </div>
+        <div class="perf-card">
+          <img src="./images/perf-mother.png" alt="Мама" class="perf-card__image" />
+          <p class="perf-card__date">15 декабря</p>
+          <p class="perf-card__date perf-card__date_time">11:00</p>
+          <h3 class="perf-card__title">МАМА</h3>
+          <p class="perf-card__details">
+            Драматург: Ольга Казакова Режиссёр: Катя Ганюшинаяч
+          </p>
+          <p class="perf-card__info">читка проекта Любимовка.Ещё</p>
+          <div class="perf-card__buttons">
+            <button class="perf-card__button perf-card__button_about">
+              <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z"
+                  fill="#242424" />
+              </svg>
+              <span class="perf-card__button-text">О СПЕКТАКЛЕ</span>
+            </button>
+            <button class="perf-card__button perf-card__button_tickets">
+              <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z"
+                  fill="#242424" />
+              </svg>
+              <span class="perf-card__button-text">БИЛЕТЫ</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <h2 class="section-title">
+        Заголовок блока с&nbsp;двумя&nbsp;спектаклями
+      </h2>
+      <div class="performances__cards">
+        <div class="perf-card">
+          <img src="./images/perf-mother.png" alt="Мама" class="perf-card__image" />
+          <p class="perf-card__date">15 декабря</p>
+          <p class="perf-card__date perf-card__date_time">11:00</p>
+          <h3 class="perf-card__title">МАМА</h3>
+          <p class="perf-card__details">
+            Драматург: Ольга Казакова Режиссёр: Катя Ганюшинаяч
+          </p>
+          <p class="perf-card__info">читка проекта Любимовка.Ещё</p>
+          <div class="perf-card__buttons">
+            <button class="perf-card__button perf-card__button_about">
+              <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z"
+                  fill="#242424" />
+              </svg>
+              <span class="perf-card__button-text">О СПЕКТАКЛЕ</span>
+            </button>
+            <button class="perf-card__button perf-card__button_tickets">
+              <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z"
+                  fill="#242424" />
+              </svg>
+              <span class="perf-card__button-text">БИЛЕТЫ</span>
+            </button>
+          </div>
+        </div>
+        <div class="perf-card">
+          <img src="./images/perf-about-lin.png" alt="Мама" class="perf-card__image" />
+          <p class="perf-card__date">15 декабря</p>
+          <p class="perf-card__date perf-card__date_time">11:00</p>
+          <h3 class="perf-card__title">Про линя</h3>
+          <p class="perf-card__details">
+            Драматург: Ольга Казакова Режиссёр: Катя Ганюшинаяч
+          </p>
+          <p class="perf-card__info">читка проекта Любимовка.Ещё</p>
+          <div class="perf-card__buttons">
+            <button class="perf-card__button perf-card__button_about">
+              <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z"
+                  fill="#242424" />
+              </svg>
+              <span class="perf-card__button-text"><span class="perf-card__button-text">О СПЕКТАКЛЕ</span></span>
+            </button>
+            <button class="perf-card__button perf-card__button_tickets">
+              <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z"
+                  fill="#242424" />
+              </svg>
+              <span class="perf-card__button-text">БИЛЕТЫ</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="performances__row-block">
+        <h2 class="section-title section-title_one-perf">
+          Заголовок блока с&nbsp;одним&nbsp;спектаклем
         </h2>
-        <div class="performances__cards">
-          <div class="perf-card">
-            <img
-              src="./images/perf-mother.png"
-              alt="Мама"
-              class="perf-card__image"
-            />
-            <p class="perf-card__date">15 декабря</p>
-            <p class="perf-card__date perf-card__date_time">11:00</p>
-            <h3 class="perf-card__title">МАМА</h3>
-            <p class="perf-card__details">
-              Драматург: Ольга Казакова Режиссёр: Катя Ганюшинаяч
-            </p>
-            <p class="perf-card__info">читка проекта Любимовка.Ещё</p>
-            <div class="perf-card__buttons">
-              <button class="perf-card__button perf-card__button_about">
-                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
-                  </svg>
-                <span class="perf-card__button-text">О СПЕКТАКЛЕ</span>
-              </button>
-              <button class="perf-card__button perf-card__button_tickets">
-                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
-                  </svg>
-                <span class="perf-card__button-text">БИЛЕТЫ</span>
-              </button>
-            </div>
-          </div>
-          <div class="perf-card">
-            <img
-              src="./images/perf-about-lin.png"
-              alt="Мама"
-              class="perf-card__image"
-            />
-            <p class="perf-card__date">15 декабря</p>
-            <p class="perf-card__date perf-card__date_time">11:00</p>
-            <h3 class="perf-card__title">Про линя</h3>
-            <p class="perf-card__details">
-              Драматург: Ольга Казакова Режиссёр: Катя Ганюшинаяч
-            </p>
-            <p class="perf-card__info">читка проекта Любимовка.Ещё</p>
-            <div class="perf-card__buttons">
-              <button class="perf-card__button perf-card__button_about">
-                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
-                  </svg>
-                <span class="perf-card__button-text">О СПЕКТАКЛЕ</span>
-              </button>
-              <button class="perf-card__button perf-card__button_tickets">
-                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
-                  </svg>
-                <span class="perf-card__button-text">БИЛЕТЫ</span>
-              </button>
-            </div>
-          </div>
-          <div class="perf-card">
-            <img
-              src="./images/perf-mother.png"
-              alt="Мама"
-              class="perf-card__image"
-            />
-            <p class="perf-card__date">15 декабря</p>
-            <p class="perf-card__date perf-card__date_time">11:00</p>
-            <h3 class="perf-card__title">МАМА</h3>
-            <p class="perf-card__details">
-              Драматург: Ольга Казакова Режиссёр: Катя Ганюшинаяч
-            </p>
-            <p class="perf-card__info">читка проекта Любимовка.Ещё</p>
-            <div class="perf-card__buttons">
-              <button class="perf-card__button perf-card__button_about">
-                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
-                  </svg>
-                <span class="perf-card__button-text">О СПЕКТАКЛЕ</span>
-              </button>
-              <button class="perf-card__button perf-card__button_tickets">
-                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
-                  </svg>
-                <span class="perf-card__button-text">БИЛЕТЫ</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <h2 class="section-title">
-          Заголовок блока с&nbsp;двумя&nbsp;спектаклями
-        </h2>
-        <div class="performances__cards">
-          <div class="perf-card">
-            <img
-              src="./images/perf-mother.png"
-              alt="Мама"
-              class="perf-card__image"
-            />
-            <p class="perf-card__date">15 декабря</p>
-            <p class="perf-card__date perf-card__date_time">11:00</p>
-            <h3 class="perf-card__title">МАМА</h3>
-            <p class="perf-card__details">
-              Драматург: Ольга Казакова Режиссёр: Катя Ганюшинаяч
-            </p>
-            <p class="perf-card__info">читка проекта Любимовка.Ещё</p>
-            <div class="perf-card__buttons">
-              <button class="perf-card__button perf-card__button_about">
-                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
-                  </svg>
-                <span class="perf-card__button-text">О СПЕКТАКЛЕ</span>
-              </button>
-              <button class="perf-card__button perf-card__button_tickets">
-                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
-                  </svg>
-                <span class="perf-card__button-text">БИЛЕТЫ</span>
-              </button>
-            </div>
-          </div>
-          <div class="perf-card">
-            <img
-              src="./images/perf-about-lin.png"
-              alt="Мама"
-              class="perf-card__image"
-            />
-            <p class="perf-card__date">15 декабря</p>
-            <p class="perf-card__date perf-card__date_time">11:00</p>
-            <h3 class="perf-card__title">Про линя</h3>
-            <p class="perf-card__details">
-              Драматург: Ольга Казакова Режиссёр: Катя Ганюшинаяч
-            </p>
-            <p class="perf-card__info">читка проекта Любимовка.Ещё</p>
-            <div class="perf-card__buttons">
-              <button class="perf-card__button perf-card__button_about">
-                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
-                  </svg>
-                <span class="perf-card__button-text"><span class="perf-card__button-text">О СПЕКТАКЛЕ</span></span>
-              </button>
-              <button class="perf-card__button perf-card__button_tickets">
-                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
-                  </svg>
-                <span class="perf-card__button-text">БИЛЕТЫ</span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="performances__row-block">
-          <h2 class="section-title section-title_one-perf">
-            Заголовок блока с&nbsp;одним&nbsp;спектаклем
-          </h2>
 
-          <div class="perf-card">
-            <img
-              src="./images/perf-mother.png"
-              alt="Мама"
-              class="perf-card__image"
-            />
-            <p class="perf-card__date">15 декабря</p>
-            <p class="perf-card__date perf-card__date_time">11:00</p>
-            <h3 class="perf-card__title">МАМА</h3>
-            <p class="perf-card__details">
-              Драматург: Ольга Казакова Режиссёр: Катя Ганюшинаяч
-            </p>
-            <p class="perf-card__info">читка проекта Любимовка.Ещё</p>
-            <div class="perf-card__buttons">
-              <button class="perf-card__button perf-card__button_about">
-                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
-                  </svg>
-                <span class="perf-card__button-text">О СПЕКТАКЛЕ</span>
-              </button>
-              <button class="perf-card__button perf-card__button_tickets">
-                <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
-                  </svg>
-                <span class="perf-card__button-text">БИЛЕТЫ</span>
-              </button>
-            </div>
+        <div class="perf-card">
+          <img src="./images/perf-mother.png" alt="Мама" class="perf-card__image" />
+          <p class="perf-card__date">15 декабря</p>
+          <p class="perf-card__date perf-card__date_time">11:00</p>
+          <h3 class="perf-card__title">МАМА</h3>
+          <p class="perf-card__details">
+            Драматург: Ольга Казакова Режиссёр: Катя Ганюшинаяч
+          </p>
+          <p class="perf-card__info">читка проекта Любимовка.Ещё</p>
+          <div class="perf-card__buttons">
+            <button class="perf-card__button perf-card__button_about">
+              <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z"
+                  fill="#242424" />
+              </svg>
+              <span class="perf-card__button-text">О СПЕКТАКЛЕ</span>
+            </button>
+            <button class="perf-card__button perf-card__button_tickets">
+              <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="perf-card__button-arrow" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z"
+                  fill="#242424" />
+              </svg>
+              <span class="perf-card__button-text">БИЛЕТЫ</span>
+            </button>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
     <section class="cards">
       <h2 class="section-title">Заголовок блока с пьесами</h2>
       <div class="cards__scroll-container">
@@ -597,236 +508,110 @@
               <span class="card__author">Екатерина Августеняк</span>
               <span class="card__location">Санкт-Петербург</span>
               <span class="card__year">2020</span>
-            </article>
-            <article class="card">
-              <div class="card__rectangle">
-                <h3 class="card__name">МАМА</h3>
-                <div class="card__mobile-block">
-                  <button class="card__mobile-button">
-                    <span class="card__button-span">СМОТРЕТЬ ЧИТКУ</span>
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="card__button-svg"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M15.9082 0.0588686L15.9082 1.08393L15.9082 9.2844L14.9142 9.2844L14.9142 1.75983L1.41247 15.2616L0.705364 14.5545L14.1759 1.08393L6.74899 1.08393L6.74899 0.0588689L14.9142 0.0588684L15.9082 0.0588686Z"
-                      />
-                    </svg>
-                  </button>
-                  <button class="card__mobile-button">
-                    <span class="card__button-span">СКАЧАТЬ ЧИТКУ</span>
-                    <svg
-                      width="13"
-                      height="21"
-                      viewBox="0 0 13 21"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="card__button-svg"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M6.52344 21L5.79861 20.2752L-9.99377e-08 14.4766L0.702866 13.7737L6.02354 19.0944L6.02354 0H7.02354L7.02354 19.0502L12.2752 13.7986L13 14.5234L7.22631 20.2971L6.52344 21Z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <span class="card__author">Екатерина Августеняк</span>
-              <span class="card__location">Санкт-Петербург</span>
-              <span class="card__year">2020</span>
-            </article>
-            <article class="card">
-              <div class="card__rectangle">
-                <h3 class="card__name">
-                  Конкретные разговоры пожилых супругов<br />ни о чём
-                </h3>
-                <div class="card__mobile-block">
-                  <button class="card__mobile-button">
-                    <span class="card__button-span">СМОТРЕТЬ ЧИТКУ</span>
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="card__button-svg"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M15.9082 0.0588686L15.9082 1.08393L15.9082 9.2844L14.9142 9.2844L14.9142 1.75983L1.41247 15.2616L0.705364 14.5545L14.1759 1.08393L6.74899 1.08393L6.74899 0.0588689L14.9142 0.0588684L15.9082 0.0588686Z"
-                      />
-                    </svg>
-                  </button>
-                  <button class="card__mobile-button">
-                    <span class="card__button-span">СКАЧАТЬ ЧИТКУ</span>
-                    <svg
-                      width="13"
-                      height="21"
-                      viewBox="0 0 13 21"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="card__button-svg"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M6.52344 21L5.79861 20.2752L-9.99377e-08 14.4766L0.702866 13.7737L6.02354 19.0944L6.02354 0H7.02354L7.02354 19.0502L12.2752 13.7986L13 14.5234L7.22631 20.2971L6.52344 21Z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <span class="card__author">Екатерина Августеняк</span>
-              <span class="card__location">Санкт-Петербург</span>
-              <span class="card__year">2020</span>
-            </article>
-            <article class="card">
-              <div class="card__rectangle">
-                <h3 class="card__name">Опус ДНК</h3>
-                <div class="card__mobile-block">
-                  <button class="card__mobile-button">
-                    <span class="card__button-span">СМОТРЕТЬ ЧИТКУ</span>
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="card__button-svg"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M15.9082 0.0588686L15.9082 1.08393L15.9082 9.2844L14.9142 9.2844L14.9142 1.75983L1.41247 15.2616L0.705364 14.5545L14.1759 1.08393L6.74899 1.08393L6.74899 0.0588689L14.9142 0.0588684L15.9082 0.0588686Z"
-                      />
-                    </svg>
-                  </button>
-                  <button class="card__mobile-button">
-                    <span class="card__button-span">СКАЧАТЬ ЧИТКУ</span>
-                    <svg
-                      width="13"
-                      height="21"
-                      viewBox="0 0 13 21"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="card__button-svg"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M6.52344 21L5.79861 20.2752L-9.99377e-08 14.4766L0.702866 13.7737L6.02354 19.0944L6.02354 0H7.02354L7.02354 19.0502L12.2752 13.7986L13 14.5234L7.22631 20.2971L6.52344 21Z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <span class="card__author">Екатерина Августеняк</span>
-              <span class="card__location">Санкт-Петербург</span>
-              <span class="card__year">2020</span>
-            </article>
-            <article class="card">
-              <div class="card__rectangle">
-                <h3 class="card__name">МАМА</h3>
-                <div class="card__mobile-block">
-                  <button class="card__mobile-button">
-                    <span class="card__button-span">СМОТРЕТЬ ЧИТКУ</span>
-                    <svg
-                      width="16"
-                      height="16"
-                      viewBox="0 0 16 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="card__button-svg"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M15.9082 0.0588686L15.9082 1.08393L15.9082 9.2844L14.9142 9.2844L14.9142 1.75983L1.41247 15.2616L0.705364 14.5545L14.1759 1.08393L6.74899 1.08393L6.74899 0.0588689L14.9142 0.0588684L15.9082 0.0588686Z"
-                      />
-                    </svg>
-                  </button>
-                  <button class="card__mobile-button">
-                    <span class="card__button-span">СКАЧАТЬ ЧИТКУ</span>
-                    <svg
-                      width="13"
-                      height="21"
-                      viewBox="0 0 13 21"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        class="card__button-svg"
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M6.52344 21L5.79861 20.2752L-9.99377e-08 14.4766L0.702866 13.7737L6.02354 19.0944L6.02354 0H7.02354L7.02354 19.0502L12.2752 13.7986L13 14.5234L7.22631 20.2971L6.52344 21Z"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <span class="card__author">Екатерина Августеняк</span>
-              <span class="card__location">Санкт-Петербург</span>
-              <span class="card__year">2020</span>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section class="persons">
-        <h2 class="section-title">Заголовок блока с персонами</h2>
-        <div class="persons__container">
-          <article class="person">
-            <img
-              src="./images/persons-img-1.png"
-              alt="персона"
-              class="person__img"
-            />
-            <p class="person__name">Тереза</p>
-            <p class="person__name">Шимчак</p>
-            <p class="person__about">Драматург, сценарист, преподаватель</p>
           </article>
-          <article class="person">
-            <img
-              src="./images/persons-img-2.png"
-              alt="персона"
-              class="person__img"
-            />
-            <p class="person__name">Тереза</p>
-            <p class="person__name">Шимчак</p>
-            <p class="person__about">Драматург, сценарист, преподаватель</p>
+          <article class="card">
+            <div class="card__rectangle">
+              <h3 class="card__name">МАМА</h3>
+              <div class="card__mobile-block">
+                <button class="card__mobile-button">
+                  <span class="card__button-span">СМОТРЕТЬ ЧИТКУ</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="card__button-svg" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.9082 0.0588686L15.9082 1.08393L15.9082 9.2844L14.9142 9.2844L14.9142 1.75983L1.41247 15.2616L0.705364 14.5545L14.1759 1.08393L6.74899 1.08393L6.74899 0.0588689L14.9142 0.0588684L15.9082 0.0588686Z" />
+                  </svg>
+                </button>
+                <button class="card__mobile-button">
+                  <span class="card__button-span">СКАЧАТЬ ЧИТКУ</span>
+                  <svg width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="card__button-svg" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.52344 21L5.79861 20.2752L-9.99377e-08 14.4766L0.702866 13.7737L6.02354 19.0944L6.02354 0H7.02354L7.02354 19.0502L12.2752 13.7986L13 14.5234L7.22631 20.2971L6.52344 21Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <span class="card__author">Екатерина Августеняк</span>
+            <span class="card__location">Санкт-Петербург</span>
+            <span class="card__year">2020</span>
           </article>
-          <article class="person">
-            <img
-              src="./images/persons-img-3.png"
-              alt="персона"
-              class="person__img"
-            />
-            <p class="person__name">Тереза</p>
-            <p class="person__name">Шимчак</p>
-            <p class="person__about">Драматург, сценарист, преподаватель</p>
+          <article class="card">
+            <div class="card__rectangle">
+              <h3 class="card__name">
+                Конкретные разговоры пожилых супругов<br />ни о чём
+              </h3>
+              <div class="card__mobile-block">
+                <button class="card__mobile-button">
+                  <span class="card__button-span">СМОТРЕТЬ ЧИТКУ</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="card__button-svg" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.9082 0.0588686L15.9082 1.08393L15.9082 9.2844L14.9142 9.2844L14.9142 1.75983L1.41247 15.2616L0.705364 14.5545L14.1759 1.08393L6.74899 1.08393L6.74899 0.0588689L14.9142 0.0588684L15.9082 0.0588686Z" />
+                  </svg>
+                </button>
+                <button class="card__mobile-button">
+                  <span class="card__button-span">СКАЧАТЬ ЧИТКУ</span>
+                  <svg width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="card__button-svg" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.52344 21L5.79861 20.2752L-9.99377e-08 14.4766L0.702866 13.7737L6.02354 19.0944L6.02354 0H7.02354L7.02354 19.0502L12.2752 13.7986L13 14.5234L7.22631 20.2971L6.52344 21Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <span class="card__author">Екатерина Августеняк</span>
+            <span class="card__location">Санкт-Петербург</span>
+            <span class="card__year">2020</span>
           </article>
-          <article class="person">
-            <img
-              src="./images/persons-img-1.png"
-              alt="персона"
-              class="person__img"
-            />
-            <p class="person__name">Тереза</p>
-            <p class="person__name">Шимчак</p>
-            <p class="person__about">Драматург, сценарист, преподаватель</p>
+          <article class="card">
+            <div class="card__rectangle">
+              <h3 class="card__name">Опус ДНК</h3>
+              <div class="card__mobile-block">
+                <button class="card__mobile-button">
+                  <span class="card__button-span">СМОТРЕТЬ ЧИТКУ</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="card__button-svg" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.9082 0.0588686L15.9082 1.08393L15.9082 9.2844L14.9142 9.2844L14.9142 1.75983L1.41247 15.2616L0.705364 14.5545L14.1759 1.08393L6.74899 1.08393L6.74899 0.0588689L14.9142 0.0588684L15.9082 0.0588686Z" />
+                  </svg>
+                </button>
+                <button class="card__mobile-button">
+                  <span class="card__button-span">СКАЧАТЬ ЧИТКУ</span>
+                  <svg width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="card__button-svg" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.52344 21L5.79861 20.2752L-9.99377e-08 14.4766L0.702866 13.7737L6.02354 19.0944L6.02354 0H7.02354L7.02354 19.0502L12.2752 13.7986L13 14.5234L7.22631 20.2971L6.52344 21Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <span class="card__author">Екатерина Августеняк</span>
+            <span class="card__location">Санкт-Петербург</span>
+            <span class="card__year">2020</span>
+          </article>
+          <article class="card">
+            <div class="card__rectangle">
+              <h3 class="card__name">МАМА</h3>
+              <div class="card__mobile-block">
+                <button class="card__mobile-button">
+                  <span class="card__button-span">СМОТРЕТЬ ЧИТКУ</span>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="card__button-svg" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M15.9082 0.0588686L15.9082 1.08393L15.9082 9.2844L14.9142 9.2844L14.9142 1.75983L1.41247 15.2616L0.705364 14.5545L14.1759 1.08393L6.74899 1.08393L6.74899 0.0588689L14.9142 0.0588684L15.9082 0.0588686Z" />
+                  </svg>
+                </button>
+                <button class="card__mobile-button">
+                  <span class="card__button-span">СКАЧАТЬ ЧИТКУ</span>
+                  <svg width="13" height="21" viewBox="0 0 13 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="card__button-svg" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.52344 21L5.79861 20.2752L-9.99377e-08 14.4766L0.702866 13.7737L6.02354 19.0944L6.02354 0H7.02354L7.02354 19.0502L12.2752 13.7986L13 14.5234L7.22631 20.2971L6.52344 21Z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <span class="card__author">Екатерина Августеняк</span>
+            <span class="card__location">Санкт-Петербург</span>
+            <span class="card__year">2020</span>
           </article>
         </div>
-      </section>
-      
-      
-          <section class="persons">
+      </div>
+    </section>
+
+    <section class="persons">
       <h2 class="section-title">Заголовок блока с персонами</h2>
       <div class="persons__container">
         <article class="person">
@@ -855,192 +640,140 @@
         </article>
       </div>
     </section>
-      
-      
-      <section class="collaboration">
-        <div class="collab__youtube">
-          <h2 class="collab__header section-title">Заголовок блока с кнопкой/ссылкой</h2>
-          <p class="collab__text">Видео прошедших мероприятий можно посмотреть в плейлисте на канале Любимовки в YouTube</p>
-          <button class="collab__button">
-            YOUTUBE
-          </button>
-        </div>
-        <div class="collab__contatcs">
-          <div class="collab__wrapper">
-            <img 
-            class="collab__image"
-            src="./images/asterisk.svg"      
-            alt="" />
+
+    <section class="collaboration">
+      <div class="collab__youtube">
+        <h2 class="collab__header section-title">Заголовок блока с кнопкой/ссылкой</h2>
+        <p class="collab__text">Видео прошедших мероприятий можно посмотреть в плейлисте на канале Любимовки в YouTube
+        </p>
+        <button class="collab__button">
+          YOUTUBE
+        </button>
+      </div>
+      <div class="collab__contatcs">
+        <div class="collab__wrapper">
+          <img class="collab__image" src="./images/asterisk.svg" alt="" />
           <h3 class="collab__title">Проект открыт </br> к сотрудничеству</h3>
-          </div>          
-          <p class="collab__par">
-            Мы находимся в постоянном поиске режиссёров и актеров, заинтересованных в постановке читок.</br>
+        </div>
+        <p class="collab__par">
+          Мы находимся в постоянном поиске режиссёров и актеров, заинтересованных в постановке читок.</br>
           </br>
-            Пишите на more@lubimovka.ru
-          </p> 
-        </div>
-      </section>     
-    </main>
-    <footer class="footer">
-      <img
-        src="./images/logo-footer.svg"
-        alt="Любимовка"
-        class="footer__logo"
-      />
-      <div class="footer__partners">
-        <h3 class="footer__partners-title">Генеральные партнеры</h3>
-        <ul class="footer__partners-links">
-          <li>
-            <a
-              href="https://prokhorovfund.ru"
-              target="_blank"
-              class="footer__partners-link"
-            >
-              <img
-                src="./images/footer-partner-1.png"
-                alt="фонд Михаила Прохорова"
-                class="footer__partners-img"
-              />
-              <span class="footer__partners-span">Генеральный партнер</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://mosbrew.ru"
-              target="_blank"
-              class="footer__partners-link"
-            >
-              <img
-                src="./images/footer-partner-2.png"
-                alt="Mosbrew"
-                class="footer__partners-img"
-              />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://sbtg.ru"
-              target="_blank"
-              class="footer__partners-link"
-            >
-              <img
-                src="./images/footer-partner-3.png"
-                alt="SBTG"
-                class="footer__parners-img"
-              />
-              <span class="footer__partners-span">Онлайн-трансляции</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://shop.apogovorit.ru/"
-              target="_blank"
-              class="footer__partners-link"
-            >
-              <img
-                src="./images/footer-partner-4.png"
-                alt="А поговорить"
-                class="footer__partners-img"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__columns">
-        <div class="footer__column footer__column_type_adress">
-          <p class="footer__column-place">Площадка «8/3»</p>
-          <p class="footer__column-addr">
-            Москва, ул. Казакова, 8, стр. 3 Метро «Курская»
-          </p>
-        </div>
-        <ul class="footer__column footer__column_type_links">
-          <li>
-            <a href="#" class="footer__column-link">Любимовка</a>
-          </li>
-          <li>
-            <a href="#" class="footer__column-link">Aфиша</a>
-          </li>
-          <li>
-            <a href="#" class="footer__column-link">Библиотека</a>
-          </li>
-          <li>
-            <a href="#" class="footer__column-link">Блог</a>
-          </li>
-          <li>
-            <a href="#" class="footer__column-link">Новости</a>
-          </li>
-        </ul>
-        <ul class="footer__column footer__column_type_links">
-          <li>
-            <a href="#" class="footer__column-link">О фестивале</a>
-          </li>
-          <li>
-            <a href="#" class="footer__column-link">Организаторы</a>
-          </li>
-          <li>
-            <a href="#" class="footer__column-link">История</a>
-          </li>
-          <li>
-            <a href="#" class="footer__column-link">Контакты</a>
-          </li>
-          <li>
-            <a href="#" class="footer__column-link">Для прессы</a>
-          </li>
-        </ul>
-        <ul class="footer__column footer__column_type_links">
-          <li>
-            <a href="#" class="footer__column-link">Все проекты</a>
-          </li>
-          <li>
-            <a href="#" class="footer__column-link">Любимовка.Еще</a>
-          </li>
-          <li>
-            <a href="#" class="footer__column-link">Спектакли</a>
-          </li>
-          <li>
-            <a href="#" class="footer__column-link">Сборник Любимовка.Пьесы</a>
-          </li>
-          <li>
-            <a href="#" class="footer__column-link">Lark+Любимовка</a>
-          </li>
-          <li>
-            <a href="#" class="footer__column-link">Практика постдраматурга</a>
-          </li>
-          <li>
-            <a href="#" class="footer__column-link">Эхо Любимовки</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__info">
-        <div class="footer__info-security">
-          <p class="footer__info-copyright">&copy; Любимовка, 2022</p>
-          <a class="footer__info-link" href="#">Политика конфедициальности</a>
-        </div>
-        <p class="footer__info-design">
-          <img
-            src="./images/footer-design-icon.svg"
-            alt="иконка"
-            class="footer__info-icon"
-          />
-          дизайн сайта —
-          <a
-            href="https://ru.shishki.co"
-            target="_blank"
-            class="footer__info-link"
-            >shishki.collective</a
-          >
-        </p>
-        <p class="footer__info-develop">
-          вёрстка и разработка — студенты
-          <a
-            href="https://practicum.yandex.ru"
-            target="_blank"
-            class="footer__info-link"
-            >Яндекс Практикума</a
-          >
+          Пишите на more@lubimovka.ru
         </p>
       </div>
-    </footer>
-    <!-- <script src="./pages/index.js"></script> -->
-  </body>
+    </section>
+  </main>
+  <footer class="footer">
+    <img src="./images/logo-footer.svg" alt="Любимовка" class="footer__logo" />
+    <div class="footer__partners">
+      <h3 class="footer__partners-title">Генеральные партнеры</h3>
+      <ul class="footer__partners-links">
+        <li>
+          <a href="https://prokhorovfund.ru" target="_blank" class="footer__partners-link">
+            <img src="./images/footer-partner-1.png" alt="фонд Михаила Прохорова" class="footer__partners-img" />
+            <span class="footer__partners-span">Генеральный партнер</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://mosbrew.ru" target="_blank" class="footer__partners-link">
+            <img src="./images/footer-partner-2.png" alt="Mosbrew" class="footer__partners-img" />
+          </a>
+        </li>
+        <li>
+          <a href="https://sbtg.ru" target="_blank" class="footer__partners-link">
+            <img src="./images/footer-partner-3.png" alt="SBTG" class="footer__parners-img" />
+            <span class="footer__partners-span">Онлайн-трансляции</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://shop.apogovorit.ru/" target="_blank" class="footer__partners-link">
+            <img src="./images/footer-partner-4.png" alt="А поговорить" class="footer__partners-img" />
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__columns">
+      <div class="footer__column footer__column_type_adress">
+        <p class="footer__column-place">Площадка «8/3»</p>
+        <p class="footer__column-addr">
+          Москва, ул. Казакова, 8, стр. 3 Метро «Курская»
+        </p>
+      </div>
+      <ul class="footer__column footer__column_type_links">
+        <li>
+          <a href="#" class="footer__column-link">Любимовка</a>
+        </li>
+        <li>
+          <a href="#" class="footer__column-link">Aфиша</a>
+        </li>
+        <li>
+          <a href="#" class="footer__column-link">Библиотека</a>
+        </li>
+        <li>
+          <a href="#" class="footer__column-link">Блог</a>
+        </li>
+        <li>
+          <a href="#" class="footer__column-link">Новости</a>
+        </li>
+      </ul>
+      <ul class="footer__column footer__column_type_links">
+        <li>
+          <a href="#" class="footer__column-link">О фестивале</a>
+        </li>
+        <li>
+          <a href="#" class="footer__column-link">Организаторы</a>
+        </li>
+        <li>
+          <a href="#" class="footer__column-link">История</a>
+        </li>
+        <li>
+          <a href="#" class="footer__column-link">Контакты</a>
+        </li>
+        <li>
+          <a href="#" class="footer__column-link">Для прессы</a>
+        </li>
+      </ul>
+      <ul class="footer__column footer__column_type_links">
+        <li>
+          <a href="#" class="footer__column-link">Все проекты</a>
+        </li>
+        <li>
+          <a href="#" class="footer__column-link">Любимовка.Еще</a>
+        </li>
+        <li>
+          <a href="#" class="footer__column-link">Спектакли</a>
+        </li>
+        <li>
+          <a href="#" class="footer__column-link">Сборник Любимовка.Пьесы</a>
+        </li>
+        <li>
+          <a href="#" class="footer__column-link">Lark+Любимовка</a>
+        </li>
+        <li>
+          <a href="#" class="footer__column-link">Практика постдраматурга</a>
+        </li>
+        <li>
+          <a href="#" class="footer__column-link">Эхо Любимовки</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__info">
+      <div class="footer__info-security">
+        <p class="footer__info-copyright">&copy; Любимовка, 2022</p>
+        <a class="footer__info-link" href="#">Политика конфедициальности</a>
+      </div>
+      <p class="footer__info-design">
+        <img src="./images/footer-design-icon.svg" alt="иконка" class="footer__info-icon" />
+        дизайн сайта —
+        <a href="https://ru.shishki.co" target="_blank" class="footer__info-link">shishki.collective</a>
+      </p>
+      <p class="footer__info-develop">
+        вёрстка и разработка — студенты
+        <a href="https://practicum.yandex.ru" target="_blank" class="footer__info-link">Яндекс Практикума</a>
+      </p>
+    </div>
+  </footer>
+  <!-- <script src="./pages/index.js"></script> -->
+</body>
+
 </html>
