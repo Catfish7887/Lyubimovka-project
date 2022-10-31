@@ -149,6 +149,11 @@
   .about__project-text {
     width: 304px;
   }
+  
+  .about__image{
+    height: 450px;
+    object-fit: cover;
+  }
 }
 
 @media screen and (max-width: 455px) {
