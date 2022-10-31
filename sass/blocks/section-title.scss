@@ -1,6 +1,6 @@
 //Стили заголовков секций
 .section-title {
-  margin: 0 0 0 25%;
+  margin: 0 0 0 $titleMarginLeft;
   padding: 0;
   max-width: $titleWidthMax;
   font-family: "Neue Machina";

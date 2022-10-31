@@ -113,12 +113,28 @@
 
 .perf-card__button {
   margin: 0;
-  padding: 8px 0 10px 29px;
+  padding: 8px 0;
   width: 154px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
   border: 0;
   border-left: 1px solid $dark;
   border-bottom: 1px solid $dark;
-  background: url(../images/button-arrow-right-dark.svg) no-repeat left center;
+  cursor: pointer;
+
+  background-image: linear-gradient($dark, $dark);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: all 0.5s;
+  background-color: transparent;
+}
+
+.perf-card__button-text {
+  margin: 0;
+  padding: 0;
   font-family: "Formular";
   font-style: normal;
   font-weight: 300;
@@ -126,8 +142,29 @@
   line-height: 14px;
   color: $dark;
   text-align: left;
-  cursor: pointer;
+  transition: all 0.5s;
 }
+
+.perf-card__button-arrow {
+  fill: $dark;
+  transition: all 0.5s;
+}
+
+.perf-card__button:hover {
+  background-size: 100% 100%;
+
+  .perf-card__button-arrow {
+    fill: $mainBackground;
+  }
+
+  .perf-card__button-text {
+    color: $mainBackground;
+  }
+}
+
+// .perf-card__button:hover
+
+// .perf-card__button:hover
 
 @media screen {
   @media (max-width: 768px) {
@@ -146,6 +183,7 @@
         "image details details"
         "image info info"
         "buttons buttons buttons";
+      border-right: 0;
     }
 
     .perf-card__image {
@@ -178,10 +216,6 @@
       display: flex;
       flex-direction: row;
       gap: 26px;
-    }
-
-    .perf-card__button {
-      padding: 8px 0 10px 29px;
     }
   }
 }

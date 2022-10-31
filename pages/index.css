@@ -43,6 +43,18 @@
   height: 35px;
 }
 
+.header__mobile-buttons {
+  display: flex;
+  padding: 0 0 0 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__burger {
+  cursor: pointer;
+}
+
 .header__nav {
   padding: 0px 29px 0 33px;
   display: flex;
@@ -91,15 +103,12 @@
 }
 
 .header__link_img {
+  visibility: hidden;
   width: 10px;
   height: 24px;
 }
 
-.header__link .header__link_img {
-  visibility: hidden;
-}
-
-.header__link:hover > .header__link_img {
+.header__link:hover .header__link_img {
   visibility: visible;
 }
 
@@ -178,11 +187,136 @@
     height: 17px;
   }
 }
-@media screen and (max-width: 768px) {
-  .header__nav,
-  .header__social,
-  .header__support {
+@media screen and (min-width: 769px) {
+  .header__mobile-buttons {
     display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 10px 24px 0;
+    border-bottom: 0;
+    align-items: center;
+  }
+  .header__nav,
+.header__social,
+.header__support {
+    display: none;
+  }
+}
+
+.cards__scroll-container {
+  display: flex;
+  margin: 48px auto 0;
+  width: 91.67%;
+}
+
+.cards__container {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__rectangle {
+  background-color: #b7c09d;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__name {
+  font-family: "Neue Machina";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 24px auto 0 24px;
+  width: 185px;
+}
+
+.card__mobile-block {
+  display: none;
+}
+
+.card__button-span {
+  font-family: "Formular";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.card__mobile-button {
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  border-top: 1px solid black;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.card__button-svg {
+  fill: #242424;
+}
+
+.card__mobile-button:hover {
+  background-color: #242424;
+}
+.card__mobile-button:hover .card__button-span {
+  color: #ecebe8;
+}
+.card__mobile-button:hover .card__button-svg {
+  fill: #ecebe8;
+}
+
+.card__author {
+  margin-top: 16px;
+  font-family: "Neue Machina";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  width: 115px;
+}
+
+.card__location {
+  margin-top: 4px;
+  font-family: "Formular";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.card__year {
+  font-family: "Formular";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@media screen and (max-width: 1439px) {
+  .cards__container {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 800px) {
+  .card__mobile-block {
+    display: block;
+  }
+  .cards__container {
+    flex-wrap: nowrap;
+  }
+  .cards__scroll-container {
+    width: 240px;
+    overflow-x: scroll;
+  }
+  .card__author {
+    width: 240px;
   }
 }
 
@@ -190,7 +324,13 @@
   width: 100%;
 }
 
-.about__title { 
+.about__intro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+}
+
+.about__title {
   font-family: "Neue Machina";
   margin: 59px auto 65px 0;
   width: 450px;
@@ -199,7 +339,29 @@
   font-size: 72px;
   line-height: 70px;
   letter-spacing: -0.01em;
-  color: #242424; 
+  color: #242424;
+}
+
+.about__button {
+  width: 120px;
+  height: 32px;
+  text-align: right;
+  padding-right: 30px;
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 14px;
+  margin: 33px auto auto 30px;
+  border: 0;
+  border-right: 1px solid #242424;
+  border-bottom: 1px solid #242424;
+  background: url(../../images/arrow-left.svg) no-repeat center right;
+}
+
+.about__button:hover {
+  cursor: pointer;
+  opacity: 0.6;
 }
 
 .about__text {
@@ -214,43 +376,14 @@
   color: #242424;
 }
 
-.about__button{
-  width: 120px;
-  height: 32px;
-  text-align: right;    
-  padding-right: 30px;
-  font-family: 'Formular';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 14px;
-  margin: 33px auto auto 30px; 
-  border: 0;    
-  border-right: 1px solid #242424;
-  border-bottom: 1px solid #242424;
-  background: url(../../images/arrow-left.svg) no-repeat center right;   
-}
-
-
-.about__button:hover{
-  cursor: pointer;
-  opacity: 0.6;
-}
-
-.about__intro{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: space-between;
-}
 
 .about__image{
   display: block;
   width: 100%;
 }
 
-
 .about__project {
-  background-color: #B7C09D;
+  background-color: #b7c09d;
   padding-top: 79px;
   padding-bottom: 120px;
   margin-bottom: 98px;
@@ -268,72 +401,78 @@
   color: #242424;
 }
 
-.about__project-text{
+.about__project-text {
   font-family: "Neue Machina";
   margin: 0 auto;
-  margin-top: 17px;
   width: 509px;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 28px;
   letter-spacing: -0.01em;
-  font-feature-settings: 'ss01' on;
+  font-feature-settings: "ss01" on;
   color: #242424;
 }
 
 @media screen and (max-width: 1065px) {
-  .about__title{
+  .about__title {
     font-size: 60px;
     line-height: 60px;
   }
-  .about__text{
-    width: 320px;    
+  .about__text {
+    width: 320px;
+    margin-right: 60px;
     font-size: 24px;
     line-height: 28px;
   }
-  .about__project-title{
+  .about__project-title {
     margin-left: 13%;
+  }
 }
-}
-
 @media screen and (max-width: 855px) {
-  .about__project-title{
-      margin-left: 13%;
+  .about__project-title {
+    margin-left: 13%;
   }
-  .about__project-text{
-      margin-left: 25%;
-  }  
+  .about__project-text {
+    margin-left: 25%;
+  }
 }
-
-@media screen and (max-width: 768px){
-  .about__button{
-      display: none;
+@media screen and (min-width: 769px) {
+  .about__button_header {
+    display: none;
   }
-  .about__intro{
-      grid-template-columns: 1fr;
+}
+@media screen and (max-width: 768px) {
+  .about__button {
+    visibility: hidden;
   }
-  .about__title{   
+  .about__button_header {
+    visibility: visible;
+    margin: 0;
+  }
+  .about__intro {
+    grid-template-columns: 1fr;
+  }
+  .about__title {
     font-size: 40px;
     line-height: 40px;
     margin-left: 13%;
     margin-bottom: 13px;
   }
-  .about__text{    
+  .about__text {
     font-size: 20px;
-    line-height: 28px;   
+    line-height: 28px;
     margin-bottom: 36px;
     width: 304px;
     margin-left: 25%;
   }
-  .about__project-text{
-    width: 304px; 
-  } 
+  .about__project-text {
+    width: 304px;
+  }
 }
-
-@media screen and (max-width: 455px){
-  .about__title{      
-      width: 330px;
+@media screen and (max-width: 455px) {
+  .about__title {
+    width: 330px;
   }
 }
 
@@ -401,7 +540,7 @@
 }
 
 .video__play-btn {
-  background-image: url("../../images/VideoPlayBtn.svg");
+  background-image: url("../images/VideoPlayBtn.svg");
   background-color: transparent;
   border: none;
   padding: 0;
@@ -624,12 +763,27 @@
 
 .perf-card__button {
   margin: 0;
-  padding: 8px 0 10px 29px;
+  padding: 8px 0;
   width: 154px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
   border: 0;
   border-left: 1px solid #242424;
   border-bottom: 1px solid #242424;
-  background: url(../images/button-arrow-right-dark.svg) no-repeat left center;
+  cursor: pointer;
+  background-image: linear-gradient(#242424, #242424);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: all 0.5s;
+  background-color: transparent;
+}
+
+.perf-card__button-text {
+  margin: 0;
+  padding: 0;
   font-family: "Formular";
   font-style: normal;
   font-weight: 300;
@@ -637,7 +791,22 @@
   line-height: 14px;
   color: #242424;
   text-align: left;
-  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.perf-card__button-arrow {
+  fill: #242424;
+  transition: all 0.5s;
+}
+
+.perf-card__button:hover {
+  background-size: 100% 100%;
+}
+.perf-card__button:hover .perf-card__button-arrow {
+  fill: #ecebe8;
+}
+.perf-card__button:hover .perf-card__button-text {
+  color: #ecebe8;
 }
 
 @media screen and (max-width: 768px) {
@@ -650,6 +819,7 @@
     column-gap: 29px;
     grid-template-columns: 92px 110px 1fr;
     grid-template-areas: "image date time" "image title title" "image details details" "image info info" "buttons buttons buttons";
+    border-right: 0;
   }
   .perf-card__image {
     width: 92px;
@@ -676,9 +846,6 @@
     display: flex;
     flex-direction: row;
     gap: 26px;
-  }
-  .perf-card__button {
-    padding: 8px 0 10px 29px;
   }
 }
 .section-title {
