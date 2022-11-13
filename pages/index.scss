@@ -4,10 +4,7 @@
   font-style: normal;
   font-weight: normal;
   src: url("../vendor/fonts/formular-light.eot");
-  src: url("../vendor/fonts/formular-light.eot?#iefix")
-      format("embedded-opentype"),
-    url("../vendor/fonts/formular-light.woff2") format("woff2"),
-    url("../vendor/fonts/formular-light.woff") format("woff");
+  src: url("../vendor/fonts/formular-light.eot?#iefix") format("embedded-opentype"), url("../vendor/fonts/formular-light.woff2") format("woff2"), url("../vendor/fonts/formular-light.woff") format("woff");
 }
 @font-face {
   font-display: swap;
@@ -15,10 +12,7 @@
   font-style: normal;
   font-weight: normal;
   src: url("../vendor/fonts/PPNeueMachina-Regular.eot");
-  src: url("../vendor/fonts/PPNeueMachina-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("../vendor/fonts/PPNeueMachina-Regular.woff2") format("woff2"),
-    url("../vendor/fonts/PPNeueMachina-Regular.woff") format("woff");
+  src: url("../vendor/fonts/PPNeueMachina-Regular.eot?#iefix") format("embedded-opentype"), url("../vendor/fonts/PPNeueMachina-Regular.woff2") format("woff2"), url("../vendor/fonts/PPNeueMachina-Regular.woff") format("woff");
 }
 .slider {
   margin: 0 auto;
@@ -473,8 +467,8 @@
     align-items: center;
   }
   .header__nav,
-  .header__social,
-  .header__support {
+.header__social,
+.header__support {
     display: none;
   }
 }
@@ -751,7 +745,7 @@
   }
 }
 .collab__youtube {
-  background-color: #b7c09d;
+  background-color: #B7C09D;
   padding-top: 71px;
   padding-bottom: 141px;
   display: grid;
@@ -783,8 +777,7 @@
   border: 1px solid #000000;
   width: 298px;
   height: 56px;
-  background: url(../../images/collaboration-arrow.svg) no-repeat center right
-    28px;
+  background: url(../../images/collaboration-arrow.svg) no-repeat center right 28px;
   padding-left: 20px;
   text-align: left;
   font-family: "Formular";
@@ -1457,4 +1450,4 @@
   }
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=index.scss.map */

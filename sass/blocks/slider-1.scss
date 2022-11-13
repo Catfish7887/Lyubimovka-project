@@ -1,0 +1,25 @@
+.slider {
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.slider__line {
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+  box-sizing: border-box;
+}
+
+.slider__nav {
+  display: none;
+  justify-content: center;
+  gap: 10px;
+}
+
+.slider__button {
+  cursor: pointer;
+}
